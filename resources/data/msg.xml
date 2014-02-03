@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mmo-msgs postfix="msg">
+  <group name="game">
+    <!-- 클라이언트가 처음 로그인할 때 -->
+    <msg name="enter_world" from="client" to="server">
+      <field type="string" name="name"/>
+    </msg>
+    <!-- 어떤 클라이언트가 로그인했다고 다른 클라이언트들에게 알려줄 때 -->
+    <msg name="spawn" from="server" to="client">
+      <field type="int" name="id"/>
+      <field type="string" name="name" attribute="nameplate.name"/>
+      <ref msg="character_resource" once="true"/>
+      <ref msg="update_position" once="true"/>
+      <ref msg="update_hp" once="true"/>
+    </msg>
+    <!-- 클라이언트가 움직일 때 -->
+    <msg name="move" from="client" to="server">
+      <field type="int" name="id"/>
+      <field type="double" name="x" attribute="pos.x"/>
+      <field type="double" name="y" attribute="pos.y"/>
+      <field type="double" name="dir" attribute="motion.dir"/>
+      <field type="double" name="speed" attribute="motion.speed"/>
+    </msg>
+    <!-- 클라이언트가 움직였다는 상황을 다른 클라이언트들에게 알려줄 때 -->
+    <msg name="update_position" from="server" to="client">
+      <field type="int" name="id"/>
+      <field type="double" name="x" attribute="pos.x"/>
+      <field type="double" name="y" attribute="pos.y"/>
+      <field type="double" name="dir" attribute="motion.dir"/>
+      <field type="double" name="speed" attribute="motion.speed"/>
+      <field type="bool" name="instance_move"/>
+    </msg>
+    <!-- 클라이언트가 로그아웃 했다는 것을 다른 클라이언트들에게 알려줄 때 -->
+    <msg name="despawn" from="server" to="client">
+      <field type="int" name="id"/>
+    </msg>
+    <!-- 클라이언트가 처음 로그인 했을 때 보내주는 정보 -->
+    <msg name="world_info" from="server" to="client">
+      <field type="int" name="id"/>
+      <field type="int" name="world_id"/>
+      <ref msg="spawn"/>
+    </msg>
+    <!-- 클라이언트가 채팅을 했거나, 다른 클라이언트로부터의 채팅 메시지를 받을 때 -->
+    <msg name="chat" from="both" to="both">
+      <field type="int" name="id"/>
+      <field type="string" name="message"/>
+    </msg>
+    <!-- 캐릭터의 외형 정보 등을 포함한 정보로 Spawn 되거나 외형이 변경되었을 때 받는다. -->
+    <msg name="character_resource" from="server" to="client">
+      <field type="int" name="id"/>
+      <field type="int" name="resource_id" attribute="displayable.resource_id"/>
+    </msg>
+    <!-- 클라이언트가 어떠한 서버 대상에게 interaction을 요청할 때 -->
+    <msg name="interact" from="client" to="server">
+      <field type="int" name="interact_id"/>
+    </msg>
+    <!-- 대상의 Hp가 변경될 때 -->
+    <msg name="update_hp" from="server" to="client">
+      <field type="int" name="id"/>
+      <field type="int" name="max_hp" attribute="fightable.max_hp"/>
+      <field type="int" name="hp" attribute="fightable.hp"/>
+    </msg>
+    <!-- 특별히 클라이언트에게 알려줄 메시지가 있을 때 -->
+    <msg name="alert" from="server" to="client">
+      <field type="string" name="message"/>
+    </msg>
+  </group>
+  <group name="system">
+    <!-- 네트워크가 끊어질 때 전파되는 메시지 (주의: 삭제 시 빌드 안됨) -->
+    <msg name="session_error" from="both" to="both" internal="true">
+      <field type="int" name="error_code"/>
+    </msg>
+  </group>
+  <group name="resource">
+    <msg name="voice" from="server" to="client">
+      <field type="int" name="id"/>
+      <field type="bin" name="mp3"/>
+    </msg>
+  </group>
+  <group name="pylon">
+    <!-- game server가 pylon에 자신의 정보를 등록하기 위한 메시지 -->
+    <msg name="server" from="server" to="server">
+      <field type="string" name="host"/>
+      <field type="int" name="port"/>
+      <field type="string" name="name"/>
+    </msg>
+    <!-- client가 pylon에게 서버 목록을 요청하기 위한 메시지 -->
+    <msg name="request_server" from="client" to="server"/>
+    <!-- pylon이 client에게 서버 목록을 응답하기 위한 메시지 -->
+    <msg name="servers" from="server" to="client">
+      <ref msg="server"/>
+    </msg>
+    <!-- 서버 간 채팅을 위한 로그인 메시지 -->
+    <msg name="inter_chat_login" from="server" to="server">
+      <field type="string" name="name"/>
+    </msg>
+    <!-- 서버 간 채팅 메시지를 전달하는 메시지-->
+    <msg name="inter_chat" from="server" to="server">
+      <field type="string" name="name"/>
+      <field type="string" name="message"/>
+      <field type="long" name="ticks"/>
+    </msg>
+    <!-- 채팅 명령을 전달하는 메시지-->
+    <msg name="inter_chat_command" from="server" to="server">
+      <field type="int" name="type_code"/>
+      <field type="string" name="content"/>
+    </msg>
+    <!-- 서버 생존 확인 메시지 -->
+    <msg name="alive_ping" from="server" to="server">
+    </msg>
+    <!-- 서버 생존 확인 응답 메시지 -->
+    <msg name="alive_pong" from="server" to="server">
+    </msg>
+  </group>
+</mmo-msgs>

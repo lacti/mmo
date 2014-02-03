@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Config>
+  <!-- logging -->
+  <Logging directory="Log" console="true"/>
+  <!-- network -->
+  <Network port="40000"/>
+  <Pylon host="mmo.pe.kr" port="40001"/>
+  <!-- data -->
+  <Data directory="../../../../resources/data" pattern="mmo-data.xml"/>
+  <!-- database -->
+  <Database mongo="false" xml="true" do-sync="false" sync-from="Server.Core.Component.MongoBind" sync-to="Server.Core.Component.XmlBind"/>
+  <MongoDatabase host="mmo.pe.kr" port="27017" database="mmo" collection="entity"/>
+  <XmlDatabase directory="XmlDb"/>
+  <!-- assemblies -->
+  <Assembly message="Server.Message.dll" attribute="Server.Attribute.dll" data="Server.Data.dll"/>
+</Config>

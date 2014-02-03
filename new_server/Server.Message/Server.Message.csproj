@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{095B4A42-B5B2-4F97-8A23-9AC61F20C1A8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Server.Message</RootNamespace>
+    <AssemblyName>Server.Message</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Game\CharacterResourceMsg.cs" />
+    <Compile Include="Game\ChatMsg.cs" />
+    <Compile Include="Game\DespawnMsg.cs" />
+    <Compile Include="Game\InteractMsg.cs" />
+    <Compile Include="Game\EnterWorldMsg.cs" />
+    <Compile Include="Game\MoveMsg.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Game\SpawnMsg.cs" />
+    <Compile Include="Game\UpdatePositionMsg.cs" />
+    <Compile Include="Resource\VoiceMsg.cs" />
+    <Compile Include="Game\WorldInfoMsg.cs" />
+    <Compile Include="Game\UpdateHpMsg.cs" />
+    <Compile Include="Pylon\ServerMsg.cs" />
+    <Compile Include="Pylon\RequestServerMsg.cs" />
+    <Compile Include="Pylon\ServersMsg.cs" />
+    <Compile Include="Game\AlertMsg.cs" />
+    <Compile Include="Pylon\InterChatLoginMsg.cs" />
+    <Compile Include="Pylon\InterChatMsg.cs" />
+    <Compile Include="Pylon\InterChatCommandMsg.cs" />
+    <Compile Include="Pylon\AlivePingMsg.cs" />
+    <Compile Include="Pylon\AlivePongMsg.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Server.Core\Server.Core.csproj">
+      <Project>{88bc33b9-4136-433f-a90b-85ed94a6ae66}</Project>
+      <Name>Server.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CE97E9A3-B6C0-425F-82E0-5658662B9849}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MmoTools</RootNamespace>
+    <AssemblyName>mmo_tools</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\IGenerator.cs" />
+    <Compile Include="Generator\Attribute\AttributeClass.cs" />
+    <Compile Include="Generator\Attribute\AttributeField.cs" />
+    <Compile Include="Generator\Attribute\Configuration.cs" />
+    <Compile Include="Generator\Attribute\AttributeCodeGenerator.cs" />
+    <Compile Include="Generator\Data\DataClass.cs" />
+    <Compile Include="Generator\Data\DataClassField.cs" />
+    <Compile Include="Generator\Data\DataDepender.cs" />
+    <Compile Include="Generator\Data\DataField.cs" />
+    <Compile Include="Generator\Data\DataCodeGenerator.cs" />
+    <Compile Include="Generator\Data\DataCenter.cs" />
+    <Compile Include="Generator\Data\SimpleDataField.cs" />
+    <Compile Include="Generator\Message\AttributeBind.cs" />
+    <Compile Include="Generator\Message\CodeContext.cs" />
+    <Compile Include="Generator\Message\CodeGenerateHelper.cs" />
+    <Compile Include="Generator\Message\Field.cs" />
+    <Compile Include="Generator\Message\ListField.cs" />
+    <Compile Include="Generator\Message\Message.cs" />
+    <Compile Include="Generator\Message\MessageGroup.cs" />
+    <Compile Include="Generator\Message\MessageCodeGenerator.cs" />
+    <Compile Include="Generator\Message\RefField.cs" />
+    <Compile Include="Generator\Message\RefListField.cs" />
+    <Compile Include="Generator\Message\SimpleField.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\AccessorStack.cs" />
+    <Compile Include="Util\Accessor.cs" />
+    <Compile Include="Util\CodeUtil.cs" />
+    <Compile Include="Util\EnumerableExtension.cs" />
+    <Compile Include="Util\ICode.cs" />
+    <Compile Include="Util\ISourceCodeGeneratable.cs" />
+    <Compile Include="Util\MiscUtil.cs" />
+    <Compile Include="Util\NameStack.cs" />
+    <Compile Include="Util\NameUtil.cs" />
+    <Compile Include="Util\SourceCode.cs" />
+    <Compile Include="Util\TypeEnum.cs" />
+    <Compile Include="Util\TypeUtil.cs" />
+    <Compile Include="Util\XmlExtensions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

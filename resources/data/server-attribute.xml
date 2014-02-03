@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mmo-attributes>
+  <configuration>
+    <stdafx>serverpch.h</stdafx>
+  </configuration>
+  <attribute name="pos">
+    <field name="x" type="double"/>
+    <field name="y" type="double"/>
+    <field name="z" type="double"/>
+    <custom>
+      <![CDATA[void copy_from(const pos_t& other)
+{
+    x = other.x;
+    y = other.y;
+    z = other.z;
+}
+static double distance(pos_t p0, pos_t p1)
+{
+    return sqrt(pow(p0.x - p1.x, 2) + pow(p0.y - p1.y, 2) + pow(p0.z - p1.z, 2));
+}]]>
+    </custom>
+  </attribute>
+  <attribute name="motion">
+    <field name="dir" type="double"/>
+    <field name="speed" type="double"/>
+  </attribute>
+  <attribute name="displayable">
+    <field name="visible" type="bool" default="true"/>
+    <field name="resource_id" type="int"/>
+  </attribute>
+  <attribute name="fightable">
+    <field name="max_hp" type="int" default="120"/>
+    <field name="hp" type="int" default="100"/>
+    <field name="alive" type="bool" default="true"/>
+  </attribute>
+  <attribute name="nameplate">
+    <field name="title" type="string"/>
+    <field name="name" type="string"/>
+  </attribute>
+  <attribute name="npc">
+    <field name="interactive" type="bool"/>
+  </attribute>
+  <attribute name="player">
+    <field name="logged" type="bool" volatile="true"/>
+  </attribute>
+  <attribute name="removable">
+    <field name="action" type="bool" default="true"/>
+    <field name="touch" type="bool" default="true"/>
+  </attribute>
+</mmo-attributes>

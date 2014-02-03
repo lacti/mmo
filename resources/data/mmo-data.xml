@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mmo-data>
+
+  <!-- anim-state.xml -->
+  <anim-state-list>
+    <anim-state id="1">
+      <state-list>
+        <state name="move-left" />
+        <state name="move-right" />
+        <state name="move-up" />
+        <state name="move-down" />
+      </state-list>
+    </anim-state>
+  </anim-state-list>
+
+  <!-- sprite.xml -->
+  <sprite-list>
+    <sprite id="1" name="001-Fighter01.png" anim-state-ref="1" umax="4" vmax="4" scale="4.0" count="16" />
+    <sprite id="2" name="018-Thief03.png" anim-state-ref="1" umax="4" vmax="4" scale="4.0" count="16" />
+    <sprite id="3" name="023-Gunner01.png" anim-state-ref="1" umax="4" vmax="4" scale="4.0" count="16" />
+    <sprite id="4" name="001-Grassland01.png" anim-state-ref="1" tile-size="32" scale="4.0" />
+    <sprite id="5" name="017-Thunder01.png" anim-state-ref="1" umax="5" vmax="2" count="6" scale="8.0" />
+    <sprite id="6" name="tent.png" anim-state-ref="1" umax="1" vmax="1" count="1" scale="8.0" />
+    <sprite id="7" name="flower.png" anim-state-ref="1" umax="1" vmax="1" count="1" scale="3.0" />
+    <sprite id="8" name="light5.png" anim-state-ref="1" umax="5" vmax="6" count="30" scale="10.0" />
+  </sprite-list>
+  
+  <!-- static-object.xml -->
+  <static-object-list>
+	<static-object id="1" name="cylinder-rock.obj" dds="005-Beach01.dds" scale="3.0" />
+  </static-object-list>
+
+  <!-- character.xml -->
+  <character-list>
+    <character id="1" sprite-ref="1" />
+    <character id="2" sprite-ref="2" />
+    <character id="3" sprite-ref="3" />
+  </character-list>
+
+  <!-- npc-name.xml -->
+  <npc-name-list>
+    <npc-name id="1">테스트 촌장</npc-name>
+    <npc-name id="2">도둑놈</npc-name>
+    <npc-name id="3">서민</npc-name>
+  </npc-name-list>
+
+  <!-- npc.xml -->
+  <npc-list>
+    <npc id="1" character-ref="1" npc-name-ref="1" />
+    <npc id="2" character-ref="2" npc-name-ref="2" />
+    <npc id="3" character-ref="3" npc-name-ref="3" />
+  </npc-list>
+
+  <!-- world-name.xml -->
+  <world-name-list>
+    <world-name id="1">막촌</world-name>
+  </world-name-list>
+
+  <!-- world.xml -->
+  <world-list>
+    <world id="1" world-name-ref="1" sprite-ref="4">
+      <npc-list>
+        <npc id="1" npc-ref="1" loc="0,100" rot="M_PI/2*3" />
+        <npc id="2" npc-ref="2" loc="0,100" rot="M_PI/2*3" />
+        <npc id="3" npc-ref="3" loc="100,100" rot="M_PI/2*3" />
+        <npc id="4" npc-ref="3" loc="-100,-100" rot="M_PI" />
+      </npc-list>
+    </world>
+  </world-list>
+
+  <!-- ps.xml : 파티클 시스템 설정 -->
+  <ps-list>
+    <ps id="1" count="1" />
+    <ps id="2" count="100" />
+  </ps-list>
+
+  <!-- config.xml : 파티클 시스템 설정 -->
+  <config-list>
+    <config id="1" winx="600" winy="300" />
+  </config-list>
+
+  <!-- entity-template.xml : entity가 기본으로 가지고 있을 attribute 목록 -->
+  <entity-template-list>
+    <entity-template id="_system">
+      <attribute-list>
+        <attribute name="displayable"/>
+        <attribute name="nameplate"/>
+      </attribute-list>
+    </entity-template>
+    <entity-template id="_user">
+      <attribute-list>
+        <attribute name="displayable"/>
+        <attribute name="nameplate"/>
+        <attribute name="pos"/>
+        <attribute name="motion"/>
+        <attribute name="fightable"/>
+        <attribute name="player"/>
+      </attribute-list>
+    </entity-template>
+    <entity-template id="_npc">
+      <attribute-list>
+        <attribute name="displayable"/>
+        <attribute name="nameplate"/>
+        <attribute name="pos"/>
+        <attribute name="motion"/>
+        <attribute name="npc"/>
+        <attribute name="tickable"/>
+        <attribute name="fightable"/>
+      </attribute-list>
+    </entity-template>
+    <entity-template id="_item">
+      <attribute-list>
+        <attribute name="displayable"/>
+        <attribute name="pos"/>
+        <attribute name="motion"/>
+        <attribute name="removable"/>
+      </attribute-list>
+    </entity-template>
+    <entity-template id="_monster">
+      <attribute-list>
+        <attribute name="displayable"/>
+        <attribute name="nameplate"/>
+        <attribute name="pos"/>
+        <attribute name="motion"/>
+        <attribute name="tickable"/>
+        <attribute name="eatable"/>
+      </attribute-list>
+    </entity-template>
+    <entity-template id="_factory">
+      <attribute-list>
+        <attribute name="displayable"/>
+        <attribute name="nameplate"/>
+        <attribute name="pos"/>
+        <attribute name="tickable"/>
+        <attribute name="entity_generate"/>
+      </attribute-list>
+    </entity-template>
+  </entity-template-list>
+
+  <!-- attribute.xml : attribute의 생성 기본 값 -->
+  <attribute-template-list>
+    <attribute-template id="1" name="fightable">
+      <field-list>
+        <field name="maxHp" value="120"/>
+        <field name="hp" value="100"/>
+        <field name="recovery" value="5"/>
+        <field name="recoveryTickCount" value="3"/>
+      </field-list>
+    </attribute-template>
+    <attribute-template id="2" name="removable">
+      <field-list>
+        <field name="byAction" value="true"/>
+        <field name="byTouch" value="true"/>
+      </field-list>
+    </attribute-template>
+    <attribute-template id="3" name="tickable">
+      <field-list>
+        <field name="interval" value="1000"/>
+      </field-list>
+    </attribute-template>
+    <attribute-template id="4" name="eatable">
+      <field-list>
+        <field name="maxHunger" value="12"/>
+        <field name="hunger" value="0"/>
+        <field name="incHunger" value="1"/>
+        <field name="incHungerTickCount" value="1"/>
+      </field-list>
+    </attribute-template>
+    <attribute-template id="5" name="entity_generate">
+      <field-list>
+        <field name="maxHp" value="2000"/>
+        <field name="hp" value="1000"/>
+        <field name="resource" value="0"/>
+        <field name="incHp" value="10"/>
+        <field name="incResource" value="1"/>
+        <field name="decHpForDeathFromHunger" value="100"/>
+        <field name="neededResourceToGen" value="20"/>
+      </field-list>
+    </attribute-template>
+    <attribute-template id="6" name="motion">
+      <field-list>
+        <field name="dir" value="4.71"/>
+        <field name="speed" value="10"/>
+      </field-list>
+    </attribute-template>
+    <attribute-template id="7" name="pos">
+      <field-list>
+        <field name="x" value="10"/>
+        <field name="y" value="20"/>
+      </field-list>
+    </attribute-template>
+  </attribute-template-list>
+
+  <!-- interact.xml : interact 발생 종류 -->
+  <interact-template-list>
+    <interact-template id="_attack">
+      <effect-list>
+        <effect type="_attribute" direction="_target" attribute="fightable" field="hp" function="_minus" value="20"/>
+        <effect type="_attribute" direction="_owner" attribute="fightable" field="hp" function="_plus" value="10"/>
+      </effect-list>
+    </interact-template>
+    <interact-template id="_heal">
+      <effect-list>
+        <effect type="_attribute" direction="_owner" attribute="fightable" field="hp" function="_plus" value="30"/>
+      </effect-list>
+    </interact-template>
+    <interact-template id="_recovery">
+      <effect-list>
+        <effect type="_attribute" direction="_owner" attribute="fightable" field="hp" function="_plus" value="5"/>
+      </effect-list>
+    </interact-template>
+  </interact-template-list>
+
+  <!-- trigger.xml : trigger 발생 종류 -->
+  <!--
+  <trigger-template-list>
+    <trigger-template>
+      <condition-list>
+        <condition/>
+      </condition-list>
+    </trigger-template>
+  </trigger-template-list>
+  -->
+</mmo-data>

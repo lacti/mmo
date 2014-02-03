@@ -1,0 +1,15 @@
+..\bin\x86\Release\clientsdl.exe,client\
+..\bin\x86\Release\*.dll,client\
+..\resources\EULA,client\resources\
+..\resources\fonts\go150.ttf,client\resources\fonts\
+..\resources\fonts\Delicious-Roman.otf,client\resources\fonts\
+..\resources\fonts\Delicious-Italic.otf,client\resources\fonts\
+..\resources\fonts\Delicious-Bold.otf,client\resources\fonts\
+..\resources\fonts\Delicious-BoldItalic.otf,client\resources\fonts\
+..\resources\fonts\NanumGothic.otf,client\resources\fonts\
+..\resources\data\mmo-data.xml,client\resources\data\
+..\resources\images\*,client\resources\images\
+..\resources\shaders\*,client\resources\shaders\
+..\resources\textures\*,client\resources\textures\
+..\resources\models\*,client\resources\models\
+..\resources\rocket\*,client\resources\rocket\
