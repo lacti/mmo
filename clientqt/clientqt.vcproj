@@ -1,0 +1,764 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="9,00"
+	Name="clientqt"
+	ProjectGUID="{6EB1F64E-DF19-3C27-8B14-419082F2B15B}"
+	Keyword="Qt4VSv1.0">
+	<Platforms>
+		<Platform
+			Name="Win32" />
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="..\bin\x86\"
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			ConfigurationType="1"
+			IntermediateDirectory="debug\.obj\"
+			UseOfMfc="0">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalIncludeDirectories="&quot;..\..\Qt\4.8.3-2012\include\QtCore&quot;,&quot;..\..\Qt\4.8.3-2012\include\QtGui&quot;,&quot;..\..\Qt\4.8.3-2012\include\QtOpenGL&quot;,&quot;..\..\Qt\4.8.3-2012\include\QtWebKit&quot;,&quot;..\..\Qt\4.8.3-2012\include&quot;,&quot;..\include&quot;,&quot;..\..\Qt\4.8.3-2012\include\ActiveQt&quot;,&quot;debug\.moc&quot;,&quot;.&quot;,..\..\Qt\4.8.3-2012\mkspecs\default"
+				AdditionalOptions="-Zm300 -w34100 -w34189"
+				AssemblerListingLocation="debug\.obj\"
+				BufferSecurityCheck="false"
+				DebugInformationFormat="3"
+				ExceptionHandling="1"
+				ForcedIncludeFiles="stdafx.h"
+				GeneratePreprocessedFile="0"
+				ObjectFile="debug\.obj\"
+				Optimization ="4"
+				PrecompiledHeaderFile="$(IntDir)\clientqt_debug.pch"
+				PrecompiledHeaderThrough="stdafx.h"
+				PreprocessorDefinitions="_WINDOWS,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,QT_DLL,QT_WEBKIT_LIB,QT_OPENGL_LIB,QT_GUI_LIB,QT_CORE_LIB,QT_HAVE_MMX,QT_HAVE_3DNOW,QT_HAVE_SSE,QT_HAVE_MMXEXT,QT_HAVE_SSE2,QT_THREAD_SUPPORT"
+				ProgramDataBaseFileName=".\"
+				RuntimeLibrary="3"
+				RuntimeTypeInfo="true"
+				SuppressStartupBanner="true"
+				UsePrecompiledHeader="2"
+				WarningLevel="3" />
+			<Tool
+				Name="VCCustomBuildTool" />
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="glu32.lib opengl32.lib gdi32.lib user32.lib e:\Qt\4.8.3-2012\lib\qtmaind.lib rendering_service_debug.lib clientlogic_debug.lib mmobase_debug.lib e:\Qt\4.8.3-2012\lib\QtWebKitd4.lib e:\Qt\4.8.3-2012\lib\QtOpenGLd4.lib e:\Qt\4.8.3-2012\lib\QtGuid4.lib e:\Qt\4.8.3-2012\lib\QtCored4.lib"
+				AdditionalLibraryDirectories="e:\Qt\4.8.3-2012\lib,../lib/x86,../lib/x86/tbb"
+				GenerateDebugInformation="true"
+				IgnoreImportLibrary="true"
+				LinkTimeCodeGeneration="0"
+				OutputFile="$(OutDir)\clientqt_debug.exe"
+				ProgramDatabaseFile=""
+				SubSystem="2"
+				SuppressStartupBanner="true" />
+			<Tool
+				Name="VCMIDLTool"
+				DefaultCharType="0"
+				EnableErrorChecks="1"
+				WarningLevel="0" />
+			<Tool
+				Name="VCPostBuildEventTool" />
+			<Tool
+				Name="VCPreBuildEventTool" />
+			<Tool
+				Name="VCPreLinkEventTool" />
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="_WINDOWS,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,QT_DLL,QT_WEBKIT_LIB,QT_OPENGL_LIB,QT_GUI_LIB,QT_CORE_LIB,QT_HAVE_MMX,QT_HAVE_3DNOW,QT_HAVE_SSE,QT_HAVE_MMXEXT,QT_HAVE_SSE2,QT_THREAD_SUPPORT,_DEBUG" />
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="..\bin\x86\"
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			ConfigurationType="1"
+			IntermediateDirectory="release\.obj\"
+			UseOfMfc="0">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalIncludeDirectories="&quot;..\..\Qt\4.8.3-2012\include\QtCore&quot;,&quot;..\..\Qt\4.8.3-2012\include\QtGui&quot;,&quot;..\..\Qt\4.8.3-2012\include\QtOpenGL&quot;,&quot;..\..\Qt\4.8.3-2012\include\QtWebKit&quot;,&quot;..\..\Qt\4.8.3-2012\include&quot;,&quot;..\include&quot;,&quot;..\..\Qt\4.8.3-2012\include\ActiveQt&quot;,&quot;release\.moc&quot;,&quot;.&quot;,..\..\Qt\4.8.3-2012\mkspecs\default"
+				AdditionalOptions="-Zm300 -w34100 -w34189"
+				AssemblerListingLocation="release\.obj\"
+				BufferSecurityCheck="false"
+				DebugInformationFormat="0"
+				ExceptionHandling="1"
+				ForcedIncludeFiles="stdafx.h"
+				GeneratePreprocessedFile="0"
+				ObjectFile="release\.obj\"
+				Optimization ="2"
+				PrecompiledHeaderFile="$(IntDir)\clientqt_release.pch"
+				PrecompiledHeaderThrough="stdafx.h"
+				PreprocessorDefinitions="_WINDOWS,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,QT_DLL,QT_NO_DEBUG,QT_WEBKIT_LIB,QT_OPENGL_LIB,QT_GUI_LIB,QT_CORE_LIB,QT_HAVE_MMX,QT_HAVE_3DNOW,QT_HAVE_SSE,QT_HAVE_MMXEXT,QT_HAVE_SSE2,QT_THREAD_SUPPORT,NDEBUG"
+				ProgramDataBaseFileName=".\"
+				RuntimeLibrary="2"
+				RuntimeTypeInfo="true"
+				SuppressStartupBanner="true"
+				UsePrecompiledHeader="2"
+				WarningLevel="3" />
+			<Tool
+				Name="VCCustomBuildTool" />
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="glu32.lib opengl32.lib gdi32.lib user32.lib e:\Qt\4.8.3-2012\lib\qtmain.lib rendering_service_release.lib clientlogic_release.lib mmobase_release.lib e:\Qt\4.8.3-2012\lib\QtWebKit4.lib e:\Qt\4.8.3-2012\lib\QtOpenGL4.lib e:\Qt\4.8.3-2012\lib\QtGui4.lib e:\Qt\4.8.3-2012\lib\QtCore4.lib"
+				AdditionalLibraryDirectories="e:\Qt\4.8.3-2012\lib,../lib/x86,../lib/x86/tbb"
+				GenerateDebugInformation="false"
+				IgnoreImportLibrary="true"
+				LinkIncremental="1"
+				LinkTimeCodeGeneration="0"
+				OutputFile="$(OutDir)\clientqt_release.exe"
+				ProgramDatabaseFile=""
+				SubSystem="2"
+				SuppressStartupBanner="true" />
+			<Tool
+				Name="VCMIDLTool"
+				DefaultCharType="0"
+				EnableErrorChecks="1"
+				WarningLevel="0" />
+			<Tool
+				Name="VCPostBuildEventTool" />
+			<Tool
+				Name="VCPreBuildEventTool" />
+			<Tool
+				Name="VCPreLinkEventTool" />
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="_WINDOWS,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,QT_DLL,QT_NO_DEBUG,QT_WEBKIT_LIB,QT_OPENGL_LIB,QT_GUI_LIB,QT_CORE_LIB,QT_HAVE_MMX,QT_HAVE_3DNOW,QT_HAVE_SSE,QT_HAVE_MMXEXT,QT_HAVE_SSE2,QT_THREAD_SUPPORT" />
+		</Configuration>
+	</Configurations>
+	<Files>
+		<Filter
+			Name="Source Files"
+			Filter="cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx"
+			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}">
+			<File
+				RelativePath="browser_widget.cpp" />
+			<File
+				RelativePath="chat_input_box.cpp" />
+			<File
+				RelativePath="clientlogic_thread.cpp" />
+			<File
+				RelativePath="escmenu_widget.cpp" />
+			<File
+				RelativePath="graphics_view.cpp" />
+			<File
+				RelativePath="inven_widget.cpp" />
+			<File
+				RelativePath="logger_box.cpp" />
+			<File
+				RelativePath="main.cpp" />
+			<File
+				RelativePath="model.cpp" />
+			<File
+				RelativePath="opengl_scene.cpp" />
+			<File
+				RelativePath="signin_widget.cpp" />
+		</Filter>
+		<Filter
+			Name="Header Files"
+			Filter="h;hpp;hxx;hm;inl;inc;xsd"
+			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}">
+			<File
+				RelativePath="browser_widget.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="E:\Qt\4.8.3-2012\bin\moc.exe;browser_widget.h"
+						CommandLine="E:\Qt\4.8.3-2012\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_WEBKIT_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\Qt\4.8.3-2012\include\QtCore&quot; -I&quot;..\..\Qt\4.8.3-2012\include\QtGui&quot; -I&quot;..\..\Qt\4.8.3-2012\include\QtOpenGL&quot; -I&quot;..\..\Qt\4.8.3-2012\include\QtWebKit&quot; -I&quot;..\..\Qt\4.8.3-2012\include&quot; -I&quot;..\include&quot; -I&quot;..\..\Qt\4.8.3-2012\include\ActiveQt&quot; -I&quot;debug\.moc&quot; -I&quot;.&quot; -I..\..\Qt\4.8.3-2012\mkspecs\default -D_MSC_VER=1310 -DWIN32 browser_widget.h -o debug\.moc\moc_browser_widget.cpp"
+						Description="MOC browser_widget.h"
+						Outputs="debug\.moc\moc_browser_widget.cpp"
+						Path="e:\Qt\4.8.3-2012\bin" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="E:\Qt\4.8.3-2012\bin\moc.exe;browser_widget.h"
+						CommandLine="E:\Qt\4.8.3-2012\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_WEBKIT_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\Qt\4.8.3-2012\include\QtCore&quot; -I&quot;..\..\Qt\4.8.3-2012\include\QtGui&quot; -I&quot;..\..\Qt\4.8.3-2012\include\QtOpenGL&quot; -I&quot;..\..\Qt\4.8.3-2012\include\QtWebKit&quot; -I&quot;..\..\Qt\4.8.3-2012\include&quot; -I&quot;..\include&quot; -I&quot;..\..\Qt\4.8.3-2012\include\ActiveQt&quot; -I&quot;release\.moc&quot; -I&quot;.&quot; -I..\..\Qt\4.8.3-2012\mkspecs\default -D_MSC_VER=1310 -DWIN32 browser_widget.h -o release\.moc\moc_browser_widget.cpp"
+						Description="MOC browser_widget.h"
+						Outputs="release\.moc\moc_browser_widget.cpp"
+						Path="e:\Qt\4.8.3-2012\bin" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="chat_input_box.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="E:\Qt\4.8.3-2012\bin\moc.exe;chat_input_box.h"
+						CommandLine="E:\Qt\4.8.3-2012\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_WEBKIT_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\Qt\4.8.3-2012\include\QtCore&quot; -I&quot;..\..\Qt\4.8.3-2012\include\QtGui&quot; -I&quot;..\..\Qt\4.8.3-2012\include\QtOpenGL&quot; -I&quot;..\..\Qt\4.8.3-2012\include\QtWebKit&quot; -I&quot;..\..\Qt\4.8.3-2012\include&quot; -I&quot;..\include&quot; -I&quot;..\..\Qt\4.8.3-2012\include\ActiveQt&quot; -I&quot;debug\.moc&quot; -I&quot;.&quot; -I..\..\Qt\4.8.3-2012\mkspecs\default -D_MSC_VER=1310 -DWIN32 chat_input_box.h -o debug\.moc\moc_chat_input_box.cpp"
+						Description="MOC chat_input_box.h"
+						Outputs="debug\.moc\moc_chat_input_box.cpp"
+						Path="e:\Qt\4.8.3-2012\bin" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="E:\Qt\4.8.3-2012\bin\moc.exe;chat_input_box.h"
+						CommandLine="E:\Qt\4.8.3-2012\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_WEBKIT_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\Qt\4.8.3-2012\include\QtCore&quot; -I&quot;..\..\Qt\4.8.3-2012\include\QtGui&quot; -I&quot;..\..\Qt\4.8.3-2012\include\QtOpenGL&quot; -I&quot;..\..\Qt\4.8.3-2012\include\QtWebKit&quot; -I&quot;..\..\Qt\4.8.3-2012\include&quot; -I&quot;..\include&quot; -I&quot;..\..\Qt\4.8.3-2012\include\ActiveQt&quot; -I&quot;release\.moc&quot; -I&quot;.&quot; -I..\..\Qt\4.8.3-2012\mkspecs\default -D_MSC_VER=1310 -DWIN32 chat_input_box.h -o release\.moc\moc_chat_input_box.cpp"
+						Description="MOC chat_input_box.h"
+						Outputs="release\.moc\moc_chat_input_box.cpp"
+						Path="e:\Qt\4.8.3-2012\bin" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="clientlogic_thread.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="E:\Qt\4.8.3-2012\bin\moc.exe;clientlogic_thread.h"
+						CommandLine="E:\Qt\4.8.3-2012\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_WEBKIT_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\Qt\4.8.3-2012\include\QtCore&quot; -I&quot;..\..\Qt\4.8.3-2012\include\QtGui&quot; -I&quot;..\..\Qt\4.8.3-2012\include\QtOpenGL&quot; -I&quot;..\..\Qt\4.8.3-2012\include\QtWebKit&quot; -I&quot;..\..\Qt\4.8.3-2012\include&quot; -I&quot;..\include&quot; -I&quot;..\..\Qt\4.8.3-2012\include\ActiveQt&quot; -I&quot;debug\.moc&quot; -I&quot;.&quot; -I..\..\Qt\4.8.3-2012\mkspecs\default -D_MSC_VER=1310 -DWIN32 clientlogic_thread.h -o debug\.moc\moc_clientlogic_thread.cpp"
+						Description="MOC clientlogic_thread.h"
+						Outputs="debug\.moc\moc_clientlogic_thread.cpp"
+						Path="e:\Qt\4.8.3-2012\bin" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="E:\Qt\4.8.3-2012\bin\moc.exe;clientlogic_thread.h"
+						CommandLine="E:\Qt\4.8.3-2012\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_WEBKIT_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\Qt\4.8.3-2012\include\QtCore&quot; -I&quot;..\..\Qt\4.8.3-2012\include\QtGui&quot; -I&quot;..\..\Qt\4.8.3-2012\include\QtOpenGL&quot; -I&quot;..\..\Qt\4.8.3-2012\include\QtWebKit&quot; -I&quot;..\..\Qt\4.8.3-2012\include&quot; -I&quot;..\include&quot; -I&quot;..\..\Qt\4.8.3-2012\include\ActiveQt&quot; -I&quot;release\.moc&quot; -I&quot;.&quot; -I..\..\Qt\4.8.3-2012\mkspecs\default -D_MSC_VER=1310 -DWIN32 clientlogic_thread.h -o release\.moc\moc_clientlogic_thread.cpp"
+						Description="MOC clientlogic_thread.h"
+						Outputs="release\.moc\moc_clientlogic_thread.cpp"
+						Path="e:\Qt\4.8.3-2012\bin" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="escmenu_widget.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="E:\Qt\4.8.3-2012\bin\moc.exe;escmenu_widget.h"
+						CommandLine="E:\Qt\4.8.3-2012\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_WEBKIT_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\Qt\4.8.3-2012\include\QtCore&quot; -I&quot;..\..\Qt\4.8.3-2012\include\QtGui&quot; -I&quot;..\..\Qt\4.8.3-2012\include\QtOpenGL&quot; -I&quot;..\..\Qt\4.8.3-2012\include\QtWebKit&quot; -I&quot;..\..\Qt\4.8.3-2012\include&quot; -I&quot;..\include&quot; -I&quot;..\..\Qt\4.8.3-2012\include\ActiveQt&quot; -I&quot;debug\.moc&quot; -I&quot;.&quot; -I..\..\Qt\4.8.3-2012\mkspecs\default -D_MSC_VER=1310 -DWIN32 escmenu_widget.h -o debug\.moc\moc_escmenu_widget.cpp"
+						Description="MOC escmenu_widget.h"
+						Outputs="debug\.moc\moc_escmenu_widget.cpp"
+						Path="e:\Qt\4.8.3-2012\bin" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="E:\Qt\4.8.3-2012\bin\moc.exe;escmenu_widget.h"
+						CommandLine="E:\Qt\4.8.3-2012\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_WEBKIT_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\Qt\4.8.3-2012\include\QtCore&quot; -I&quot;..\..\Qt\4.8.3-2012\include\QtGui&quot; -I&quot;..\..\Qt\4.8.3-2012\include\QtOpenGL&quot; -I&quot;..\..\Qt\4.8.3-2012\include\QtWebKit&quot; -I&quot;..\..\Qt\4.8.3-2012\include&quot; -I&quot;..\include&quot; -I&quot;..\..\Qt\4.8.3-2012\include\ActiveQt&quot; -I&quot;release\.moc&quot; -I&quot;.&quot; -I..\..\Qt\4.8.3-2012\mkspecs\default -D_MSC_VER=1310 -DWIN32 escmenu_widget.h -o release\.moc\moc_escmenu_widget.cpp"
+						Description="MOC escmenu_widget.h"
+						Outputs="release\.moc\moc_escmenu_widget.cpp"
+						Path="e:\Qt\4.8.3-2012\bin" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="graphics_view.h" />
+			<File
+				RelativePath="inven_widget.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="E:\Qt\4.8.3-2012\bin\moc.exe;inven_widget.h"
+						CommandLine="E:\Qt\4.8.3-2012\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_WEBKIT_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\Qt\4.8.3-2012\include\QtCore&quot; -I&quot;..\..\Qt\4.8.3-2012\include\QtGui&quot; -I&quot;..\..\Qt\4.8.3-2012\include\QtOpenGL&quot; -I&quot;..\..\Qt\4.8.3-2012\include\QtWebKit&quot; -I&quot;..\..\Qt\4.8.3-2012\include&quot; -I&quot;..\include&quot; -I&quot;..\..\Qt\4.8.3-2012\include\ActiveQt&quot; -I&quot;debug\.moc&quot; -I&quot;.&quot; -I..\..\Qt\4.8.3-2012\mkspecs\default -D_MSC_VER=1310 -DWIN32 inven_widget.h -o debug\.moc\moc_inven_widget.cpp"
+						Description="MOC inven_widget.h"
+						Outputs="debug\.moc\moc_inven_widget.cpp"
+						Path="e:\Qt\4.8.3-2012\bin" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="E:\Qt\4.8.3-2012\bin\moc.exe;inven_widget.h"
+						CommandLine="E:\Qt\4.8.3-2012\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_WEBKIT_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\Qt\4.8.3-2012\include\QtCore&quot; -I&quot;..\..\Qt\4.8.3-2012\include\QtGui&quot; -I&quot;..\..\Qt\4.8.3-2012\include\QtOpenGL&quot; -I&quot;..\..\Qt\4.8.3-2012\include\QtWebKit&quot; -I&quot;..\..\Qt\4.8.3-2012\include&quot; -I&quot;..\include&quot; -I&quot;..\..\Qt\4.8.3-2012\include\ActiveQt&quot; -I&quot;release\.moc&quot; -I&quot;.&quot; -I..\..\Qt\4.8.3-2012\mkspecs\default -D_MSC_VER=1310 -DWIN32 inven_widget.h -o release\.moc\moc_inven_widget.cpp"
+						Description="MOC inven_widget.h"
+						Outputs="release\.moc\moc_inven_widget.cpp"
+						Path="e:\Qt\4.8.3-2012\bin" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="logger_box.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="E:\Qt\4.8.3-2012\bin\moc.exe;logger_box.h"
+						CommandLine="E:\Qt\4.8.3-2012\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_WEBKIT_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\Qt\4.8.3-2012\include\QtCore&quot; -I&quot;..\..\Qt\4.8.3-2012\include\QtGui&quot; -I&quot;..\..\Qt\4.8.3-2012\include\QtOpenGL&quot; -I&quot;..\..\Qt\4.8.3-2012\include\QtWebKit&quot; -I&quot;..\..\Qt\4.8.3-2012\include&quot; -I&quot;..\include&quot; -I&quot;..\..\Qt\4.8.3-2012\include\ActiveQt&quot; -I&quot;debug\.moc&quot; -I&quot;.&quot; -I..\..\Qt\4.8.3-2012\mkspecs\default -D_MSC_VER=1310 -DWIN32 logger_box.h -o debug\.moc\moc_logger_box.cpp"
+						Description="MOC logger_box.h"
+						Outputs="debug\.moc\moc_logger_box.cpp"
+						Path="e:\Qt\4.8.3-2012\bin" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="E:\Qt\4.8.3-2012\bin\moc.exe;logger_box.h"
+						CommandLine="E:\Qt\4.8.3-2012\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_WEBKIT_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\Qt\4.8.3-2012\include\QtCore&quot; -I&quot;..\..\Qt\4.8.3-2012\include\QtGui&quot; -I&quot;..\..\Qt\4.8.3-2012\include\QtOpenGL&quot; -I&quot;..\..\Qt\4.8.3-2012\include\QtWebKit&quot; -I&quot;..\..\Qt\4.8.3-2012\include&quot; -I&quot;..\include&quot; -I&quot;..\..\Qt\4.8.3-2012\include\ActiveQt&quot; -I&quot;release\.moc&quot; -I&quot;.&quot; -I..\..\Qt\4.8.3-2012\mkspecs\default -D_MSC_VER=1310 -DWIN32 logger_box.h -o release\.moc\moc_logger_box.cpp"
+						Description="MOC logger_box.h"
+						Outputs="release\.moc\moc_logger_box.cpp"
+						Path="e:\Qt\4.8.3-2012\bin" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="model.h" />
+			<File
+				RelativePath="opengl_scene.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="E:\Qt\4.8.3-2012\bin\moc.exe;opengl_scene.h"
+						CommandLine="E:\Qt\4.8.3-2012\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_WEBKIT_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\Qt\4.8.3-2012\include\QtCore&quot; -I&quot;..\..\Qt\4.8.3-2012\include\QtGui&quot; -I&quot;..\..\Qt\4.8.3-2012\include\QtOpenGL&quot; -I&quot;..\..\Qt\4.8.3-2012\include\QtWebKit&quot; -I&quot;..\..\Qt\4.8.3-2012\include&quot; -I&quot;..\include&quot; -I&quot;..\..\Qt\4.8.3-2012\include\ActiveQt&quot; -I&quot;debug\.moc&quot; -I&quot;.&quot; -I..\..\Qt\4.8.3-2012\mkspecs\default -D_MSC_VER=1310 -DWIN32 opengl_scene.h -o debug\.moc\moc_opengl_scene.cpp"
+						Description="MOC opengl_scene.h"
+						Outputs="debug\.moc\moc_opengl_scene.cpp"
+						Path="e:\Qt\4.8.3-2012\bin" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="E:\Qt\4.8.3-2012\bin\moc.exe;opengl_scene.h"
+						CommandLine="E:\Qt\4.8.3-2012\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_WEBKIT_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\Qt\4.8.3-2012\include\QtCore&quot; -I&quot;..\..\Qt\4.8.3-2012\include\QtGui&quot; -I&quot;..\..\Qt\4.8.3-2012\include\QtOpenGL&quot; -I&quot;..\..\Qt\4.8.3-2012\include\QtWebKit&quot; -I&quot;..\..\Qt\4.8.3-2012\include&quot; -I&quot;..\include&quot; -I&quot;..\..\Qt\4.8.3-2012\include\ActiveQt&quot; -I&quot;release\.moc&quot; -I&quot;.&quot; -I..\..\Qt\4.8.3-2012\mkspecs\default -D_MSC_VER=1310 -DWIN32 opengl_scene.h -o release\.moc\moc_opengl_scene.cpp"
+						Description="MOC opengl_scene.h"
+						Outputs="release\.moc\moc_opengl_scene.cpp"
+						Path="e:\Qt\4.8.3-2012\bin" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="point3d.h" />
+			<File
+				RelativePath="signin_widget.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="E:\Qt\4.8.3-2012\bin\moc.exe;signin_widget.h"
+						CommandLine="E:\Qt\4.8.3-2012\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_WEBKIT_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\Qt\4.8.3-2012\include\QtCore&quot; -I&quot;..\..\Qt\4.8.3-2012\include\QtGui&quot; -I&quot;..\..\Qt\4.8.3-2012\include\QtOpenGL&quot; -I&quot;..\..\Qt\4.8.3-2012\include\QtWebKit&quot; -I&quot;..\..\Qt\4.8.3-2012\include&quot; -I&quot;..\include&quot; -I&quot;..\..\Qt\4.8.3-2012\include\ActiveQt&quot; -I&quot;debug\.moc&quot; -I&quot;.&quot; -I..\..\Qt\4.8.3-2012\mkspecs\default -D_MSC_VER=1310 -DWIN32 signin_widget.h -o debug\.moc\moc_signin_widget.cpp"
+						Description="MOC signin_widget.h"
+						Outputs="debug\.moc\moc_signin_widget.cpp"
+						Path="e:\Qt\4.8.3-2012\bin" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="E:\Qt\4.8.3-2012\bin\moc.exe;signin_widget.h"
+						CommandLine="E:\Qt\4.8.3-2012\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_WEBKIT_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\Qt\4.8.3-2012\include\QtCore&quot; -I&quot;..\..\Qt\4.8.3-2012\include\QtGui&quot; -I&quot;..\..\Qt\4.8.3-2012\include\QtOpenGL&quot; -I&quot;..\..\Qt\4.8.3-2012\include\QtWebKit&quot; -I&quot;..\..\Qt\4.8.3-2012\include&quot; -I&quot;..\include&quot; -I&quot;..\..\Qt\4.8.3-2012\include\ActiveQt&quot; -I&quot;release\.moc&quot; -I&quot;.&quot; -I..\..\Qt\4.8.3-2012\mkspecs\default -D_MSC_VER=1310 -DWIN32 signin_widget.h -o release\.moc\moc_signin_widget.cpp"
+						Description="MOC signin_widget.h"
+						Outputs="release\.moc\moc_signin_widget.cpp"
+						Path="e:\Qt\4.8.3-2012\bin" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="stdafx.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="echo /*-------------------------------------------------------------------- >stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * Precompiled header source file used by Visual Studio.NET to generate>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * the .pch file.>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo *>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * Due to issues with the dependencies checker within the IDE, it>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * sometimes fails to recompile the PCH file, if we force the IDE to>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * create the PCH file directly from the header file.>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo *>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * This file is auto-generated by qmake since no PRECOMPILED_SOURCE was>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * specified, and is used as the common stdafx.cpp. The file is only>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * generated when creating .vcproj project files, and is not used for>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * command line compilations by nmake.>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo *>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * WARNING: All changes made in this file will be lost.>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo --------------------------------------------------------------------*/>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo #include &quot;stdafx.h&quot;>>stdafx.h.cpp"
+						Description="Generating precompiled header source file &apos;stdafx.h.cpp&apos; ..."
+						Outputs="stdafx.h.cpp" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						CommandLine="echo /*-------------------------------------------------------------------- >stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * Precompiled header source file used by Visual Studio.NET to generate>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * the .pch file.>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo *>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * Due to issues with the dependencies checker within the IDE, it>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * sometimes fails to recompile the PCH file, if we force the IDE to>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * create the PCH file directly from the header file.>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo *>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * This file is auto-generated by qmake since no PRECOMPILED_SOURCE was>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * specified, and is used as the common stdafx.cpp. The file is only>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * generated when creating .vcproj project files, and is not used for>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * command line compilations by nmake.>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo *>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo * WARNING: All changes made in this file will be lost.>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo --------------------------------------------------------------------*/>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCReportError&#x000D;&#x000A;echo #include &quot;stdafx.h&quot;>>stdafx.h.cpp"
+						Description="Generating precompiled header source file &apos;stdafx.h.cpp&apos; ..."
+						Outputs="stdafx.h.cpp" />
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter
+			Name="Generated Files"
+			Filter="cpp;c;cxx;moc;h;def;odl;idl;res;"
+			UniqueIdentifier="{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}">
+			<File
+				RelativePath="debug\.moc\moc_browser_widget.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true" />
+			</File>
+			<File
+				RelativePath="release\.moc\moc_browser_widget.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true" />
+			</File>
+			<File
+				RelativePath="debug\.moc\moc_chat_input_box.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true" />
+			</File>
+			<File
+				RelativePath="release\.moc\moc_chat_input_box.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true" />
+			</File>
+			<File
+				RelativePath="debug\.moc\moc_clientlogic_thread.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true" />
+			</File>
+			<File
+				RelativePath="release\.moc\moc_clientlogic_thread.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true" />
+			</File>
+			<File
+				RelativePath="debug\.moc\moc_escmenu_widget.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true" />
+			</File>
+			<File
+				RelativePath="release\.moc\moc_escmenu_widget.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true" />
+			</File>
+			<File
+				RelativePath="debug\.moc\moc_inven_widget.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true" />
+			</File>
+			<File
+				RelativePath="release\.moc\moc_inven_widget.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true" />
+			</File>
+			<File
+				RelativePath="debug\.moc\moc_logger_box.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true" />
+			</File>
+			<File
+				RelativePath="release\.moc\moc_logger_box.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true" />
+			</File>
+			<File
+				RelativePath="debug\.moc\moc_opengl_scene.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true" />
+			</File>
+			<File
+				RelativePath="release\.moc\moc_opengl_scene.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true" />
+			</File>
+			<File
+				RelativePath="debug\.moc\moc_signin_widget.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true" />
+			</File>
+			<File
+				RelativePath="release\.moc\moc_signin_widget.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true" />
+			</File>
+			<File
+				RelativePath="debug\qrc_client.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true" />
+			</File>
+			<File
+				RelativePath="release\qrc_client.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true" />
+			</File>
+			<File
+				RelativePath="stdafx.h.cpp">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="stdafx.h"
+						UsePrecompiledHeader="1" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						ForcedIncludeFiles="$(NOINHERIT)"
+						PrecompiledHeaderThrough="stdafx.h"
+						UsePrecompiledHeader="1" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="ui_browser.h" />
+			<File
+				RelativePath="ui_dialog.h" />
+			<File
+				RelativePath="ui_escmenu.h" />
+			<File
+				RelativePath="ui_inven2.h" />
+			<File
+				RelativePath="ui_signin.h" />
+		</Filter>
+		<Filter
+			Name="Form Files"
+			Filter="ui"
+			UniqueIdentifier="{99349809-55BA-4b9d-BF79-8FDBB0286EB3}"
+			ParseFiles="false">
+			<File
+				RelativePath="browser.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="E:\Qt\4.8.3-2012\bin\uic.exe;QtWebKit\QWebView;browser.ui"
+						CommandLine="E:\Qt\4.8.3-2012\bin\uic.exe browser.ui -o ui_browser.h"
+						Description="UIC browser.ui"
+						Outputs="ui_browser.h"
+						Path="e:\Qt\4.8.3-2012\bin" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="E:\Qt\4.8.3-2012\bin\uic.exe;QtWebKit\QWebView;browser.ui"
+						CommandLine="E:\Qt\4.8.3-2012\bin\uic.exe browser.ui -o ui_browser.h"
+						Description="UIC browser.ui"
+						Outputs="ui_browser.h"
+						Path="e:\Qt\4.8.3-2012\bin" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="dialog.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="E:\Qt\4.8.3-2012\bin\uic.exe;dialog.ui"
+						CommandLine="E:\Qt\4.8.3-2012\bin\uic.exe dialog.ui -o ui_dialog.h"
+						Description="UIC dialog.ui"
+						Outputs="ui_dialog.h"
+						Path="e:\Qt\4.8.3-2012\bin" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="E:\Qt\4.8.3-2012\bin\uic.exe;dialog.ui"
+						CommandLine="E:\Qt\4.8.3-2012\bin\uic.exe dialog.ui -o ui_dialog.h"
+						Description="UIC dialog.ui"
+						Outputs="ui_dialog.h"
+						Path="e:\Qt\4.8.3-2012\bin" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="escmenu.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="E:\Qt\4.8.3-2012\bin\uic.exe;escmenu.ui"
+						CommandLine="E:\Qt\4.8.3-2012\bin\uic.exe escmenu.ui -o ui_escmenu.h"
+						Description="UIC escmenu.ui"
+						Outputs="ui_escmenu.h"
+						Path="e:\Qt\4.8.3-2012\bin" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="E:\Qt\4.8.3-2012\bin\uic.exe;escmenu.ui"
+						CommandLine="E:\Qt\4.8.3-2012\bin\uic.exe escmenu.ui -o ui_escmenu.h"
+						Description="UIC escmenu.ui"
+						Outputs="ui_escmenu.h"
+						Path="e:\Qt\4.8.3-2012\bin" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="inven2.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="E:\Qt\4.8.3-2012\bin\uic.exe;inven2.ui"
+						CommandLine="E:\Qt\4.8.3-2012\bin\uic.exe inven2.ui -o ui_inven2.h"
+						Description="UIC inven2.ui"
+						Outputs="ui_inven2.h"
+						Path="e:\Qt\4.8.3-2012\bin" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="E:\Qt\4.8.3-2012\bin\uic.exe;inven2.ui"
+						CommandLine="E:\Qt\4.8.3-2012\bin\uic.exe inven2.ui -o ui_inven2.h"
+						Description="UIC inven2.ui"
+						Outputs="ui_inven2.h"
+						Path="e:\Qt\4.8.3-2012\bin" />
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="signin.ui">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="E:\Qt\4.8.3-2012\bin\uic.exe;QtWebKit\QWebView;signin.ui"
+						CommandLine="E:\Qt\4.8.3-2012\bin\uic.exe signin.ui -o ui_signin.h"
+						Description="UIC signin.ui"
+						Outputs="ui_signin.h"
+						Path="e:\Qt\4.8.3-2012\bin" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="E:\Qt\4.8.3-2012\bin\uic.exe;QtWebKit\QWebView;signin.ui"
+						CommandLine="E:\Qt\4.8.3-2012\bin\uic.exe signin.ui -o ui_signin.h"
+						Description="UIC signin.ui"
+						Outputs="ui_signin.h"
+						Path="e:\Qt\4.8.3-2012\bin" />
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter
+			Name="Resource Files"
+			Filter="qrc;*"
+			UniqueIdentifier="{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}"
+			ParseFiles="false">
+			<File
+				RelativePath="icons\001-Weapon01.png" />
+			<File
+				RelativePath="icons\002-Weapon02.png" />
+			<File
+				RelativePath="icons\003-Weapon03.png" />
+			<File
+				RelativePath="icons\004-Weapon04.png" />
+			<File
+				RelativePath="icons\005-Weapon05.png" />
+			<File
+				RelativePath="icons\006-Weapon06.png" />
+			<File
+				RelativePath="icons\007-Weapon07.png" />
+			<File
+				RelativePath="icons\008-Weapon08.png" />
+			<File
+				RelativePath="icons\009-Shield01.png" />
+			<File
+				RelativePath="icons\010-Head01.png" />
+			<File
+				RelativePath="icons\011-Head02.png" />
+			<File
+				RelativePath="icons\012-Head03.png" />
+			<File
+				RelativePath="icons\013-Body01.png" />
+			<File
+				RelativePath="icons\014-Body02.png" />
+			<File
+				RelativePath="icons\015-Body03.png" />
+			<File
+				RelativePath="icons\016-Accessory01.png" />
+			<File
+				RelativePath="icons\017-Accessory02.png" />
+			<File
+				RelativePath="icons\018-Accessory03.png" />
+			<File
+				RelativePath="icons\019-Accessory04.png" />
+			<File
+				RelativePath="icons\020-Accessory05.png" />
+			<File
+				RelativePath="icons\021-Potion01.png" />
+			<File
+				RelativePath="icons\022-Potion02.png" />
+			<File
+				RelativePath="icons\023-Potion03.png" />
+			<File
+				RelativePath="icons\024-Potion04.png" />
+			<File
+				RelativePath="icons\025-Herb01.png" />
+			<File
+				RelativePath="icons\026-Herb02.png" />
+			<File
+				RelativePath="icons\027-Herb03.png" />
+			<File
+				RelativePath="icons\028-Herb04.png" />
+			<File
+				RelativePath="icons\029-Key01.png" />
+			<File
+				RelativePath="icons\030-Key02.png" />
+			<File
+				RelativePath="icons\031-Key03.png" />
+			<File
+				RelativePath="icons\032-Item01.png" />
+			<File
+				RelativePath="icons\033-Item02.png" />
+			<File
+				RelativePath="icons\034-Item03.png" />
+			<File
+				RelativePath="icons\035-Item04.png" />
+			<File
+				RelativePath="icons\036-Item05.png" />
+			<File
+				RelativePath="icons\037-Item06.png" />
+			<File
+				RelativePath="icons\038-Item07.png" />
+			<File
+				RelativePath="icons\039-Item08.png" />
+			<File
+				RelativePath="icons\040-Item09.png" />
+			<File
+				RelativePath="icons\041-Item10.png" />
+			<File
+				RelativePath="icons\042-Item11.png" />
+			<File
+				RelativePath="icons\043-Item12.png" />
+			<File
+				RelativePath="icons\044-Skill01.png" />
+			<File
+				RelativePath="icons\045-Skill02.png" />
+			<File
+				RelativePath="icons\046-Skill03.png" />
+			<File
+				RelativePath="icons\047-Skill04.png" />
+			<File
+				RelativePath="icons\048-Skill05.png" />
+			<File
+				RelativePath="icons\049-Skill06.png" />
+			<File
+				RelativePath="icons\050-Skill07.png" />
+			<File
+				RelativePath="client.qrc">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="E:\Qt\4.8.3-2012\bin\rcc.exe;client.qrc;icons\001-Weapon01.png;icons\002-Weapon02.png;icons\003-Weapon03.png;icons\004-Weapon04.png;icons\005-Weapon05.png;icons\006-Weapon06.png;icons\007-Weapon07.png;icons\008-Weapon08.png;icons\009-Shield01.png;icons\010-Head01.png;icons\011-Head02.png;icons\012-Head03.png;icons\013-Body01.png;icons\014-Body02.png;icons\015-Body03.png;icons\016-Accessory01.png;icons\017-Accessory02.png;icons\018-Accessory03.png;icons\019-Accessory04.png;icons\020-Accessory05.png;icons\021-Potion01.png;icons\022-Potion02.png;icons\023-Potion03.png;icons\024-Potion04.png;icons\025-Herb01.png;icons\026-Herb02.png;icons\027-Herb03.png;icons\028-Herb04.png;icons\029-Key01.png;icons\030-Key02.png;icons\031-Key03.png;icons\032-Item01.png;icons\033-Item02.png;icons\034-Item03.png;icons\035-Item04.png;icons\036-Item05.png;icons\037-Item06.png;icons\038-Item07.png;icons\039-Item08.png;icons\040-Item09.png;icons\041-Item10.png;icons\042-Item11.png;icons\043-Item12.png;icons\044-Skill01.png;icons\045-Skill02.png;icons\046-Skill03.png;icons\047-Skill04.png;icons\048-Skill05.png;icons\049-Skill06.png;icons\050-Skill07.png"
+						CommandLine="E:\Qt\4.8.3-2012\bin\rcc.exe -name client client.qrc -o debug\qrc_client.cpp"
+						Description="RCC client.qrc"
+						Outputs="debug\qrc_client.cpp"
+						Path="e:\Qt\4.8.3-2012\bin" />
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="E:\Qt\4.8.3-2012\bin\rcc.exe;client.qrc;icons\001-Weapon01.png;icons\002-Weapon02.png;icons\003-Weapon03.png;icons\004-Weapon04.png;icons\005-Weapon05.png;icons\006-Weapon06.png;icons\007-Weapon07.png;icons\008-Weapon08.png;icons\009-Shield01.png;icons\010-Head01.png;icons\011-Head02.png;icons\012-Head03.png;icons\013-Body01.png;icons\014-Body02.png;icons\015-Body03.png;icons\016-Accessory01.png;icons\017-Accessory02.png;icons\018-Accessory03.png;icons\019-Accessory04.png;icons\020-Accessory05.png;icons\021-Potion01.png;icons\022-Potion02.png;icons\023-Potion03.png;icons\024-Potion04.png;icons\025-Herb01.png;icons\026-Herb02.png;icons\027-Herb03.png;icons\028-Herb04.png;icons\029-Key01.png;icons\030-Key02.png;icons\031-Key03.png;icons\032-Item01.png;icons\033-Item02.png;icons\034-Item03.png;icons\035-Item04.png;icons\036-Item05.png;icons\037-Item06.png;icons\038-Item07.png;icons\039-Item08.png;icons\040-Item09.png;icons\041-Item10.png;icons\042-Item11.png;icons\043-Item12.png;icons\044-Skill01.png;icons\045-Skill02.png;icons\046-Skill03.png;icons\047-Skill04.png;icons\048-Skill05.png;icons\049-Skill06.png;icons\050-Skill07.png"
+						CommandLine="E:\Qt\4.8.3-2012\bin\rcc.exe -name client client.qrc -o release\qrc_client.cpp"
+						Description="RCC client.qrc"
+						Outputs="release\qrc_client.cpp"
+						Path="e:\Qt\4.8.3-2012\bin" />
+				</FileConfiguration>
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

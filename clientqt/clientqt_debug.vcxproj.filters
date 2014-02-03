@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="browser_widget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="chat_input_box.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clientlogic_thread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="escmenu_widget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics_view.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="inven_widget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="logger_box.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="model.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="opengl_scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="signin_widget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="browser_widget.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="chat_input_box.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="clientlogic_thread.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="escmenu_widget.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <ClInclude Include="graphics_view.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <CustomBuild Include="inven_widget.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="logger_box.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <ClInclude Include="model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <CustomBuild Include="opengl_scene.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <ClInclude Include="point3d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <CustomBuild Include="signin_widget.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="debug\.moc\moc_browser_widget.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\.moc\moc_browser_widget.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\.moc\moc_chat_input_box.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\.moc\moc_chat_input_box.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\.moc\moc_clientlogic_thread.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\.moc\moc_clientlogic_thread.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\.moc\moc_escmenu_widget.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\.moc\moc_escmenu_widget.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\.moc\moc_inven_widget.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\.moc\moc_inven_widget.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\.moc\moc_logger_box.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\.moc\moc_logger_box.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\.moc\moc_opengl_scene.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\.moc\moc_opengl_scene.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\.moc\moc_signin_widget.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\.moc\moc_signin_widget.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\qrc_client.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\qrc_client.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.h.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClInclude Include="ui_browser.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_dialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_escmenu.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_inven2.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_signin.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="browser.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="dialog.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="escmenu.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="inven2.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="signin.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\001-Weapon01.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icons\002-Weapon02.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icons\003-Weapon03.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icons\004-Weapon04.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icons\005-Weapon05.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icons\006-Weapon06.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icons\007-Weapon07.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icons\008-Weapon08.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icons\009-Shield01.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icons\010-Head01.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icons\011-Head02.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icons\012-Head03.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icons\013-Body01.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icons\014-Body02.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icons\015-Body03.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icons\016-Accessory01.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icons\017-Accessory02.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icons\018-Accessory03.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icons\019-Accessory04.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icons\020-Accessory05.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icons\021-Potion01.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icons\022-Potion02.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icons\023-Potion03.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icons\024-Potion04.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icons\025-Herb01.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icons\026-Herb02.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icons\027-Herb03.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icons\028-Herb04.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icons\029-Key01.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icons\030-Key02.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icons\031-Key03.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icons\032-Item01.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icons\033-Item02.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icons\034-Item03.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icons\035-Item04.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icons\036-Item05.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icons\037-Item06.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icons\038-Item07.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icons\039-Item08.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icons\040-Item09.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icons\041-Item10.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icons\042-Item11.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icons\043-Item12.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icons\044-Skill01.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icons\045-Skill02.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icons\046-Skill03.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icons\047-Skill04.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icons\048-Skill05.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icons\049-Skill06.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icons\050-Skill07.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <CustomBuild Include="client.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,4 @@
+EXPORTS
+
+InitializeProcMap @1
+QueryProcMapHeight @2

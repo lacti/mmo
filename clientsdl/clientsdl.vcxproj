@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5EE6063F-E66F-4A7E-80C9-F35D0642FD76}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>clientsdl</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\vsprops\mmo_global.props" />
+    <Import Project="..\vsprops\OpenGL.props" />
+    <Import Project="..\vsprops\OpenDE.props" />
+    <Import Project="..\vsprops\SDL.props" />
+    <Import Project="..\vsprops\mmo_common_include.props" />
+    <Import Project="..\vsprops\boost.props" />
+    <Import Project="..\vsprops\tbb.props" />
+    <Import Project="..\vsprops\lame.props" />
+    <Import Project="..\vsprops\rocket.props" />
+    <Import Project="..\vsprops\clientrocket.props" />
+    <Import Project="..\vsprops\glew.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\vsprops\mmo_global.props" />
+    <Import Project="..\vsprops\OpenGL.props" />
+    <Import Project="..\vsprops\OpenDE.props" />
+    <Import Project="..\vsprops\SDL.props" />
+    <Import Project="..\vsprops\mmo_common_include.props" />
+    <Import Project="..\vsprops\boost.props" />
+    <Import Project="..\vsprops\tbb.props" />
+    <Import Project="..\vsprops\lame.props" />
+    <Import Project="..\vsprops\rocket.props" />
+    <Import Project="..\vsprops\clientrocket.props" />
+    <Import Project="..\vsprops\glew.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;SDL_MAIN_HANDLED;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;SDL_MAIN_HANDLED;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="audio.cpp" />
+    <ClCompile Include="basicdraw.cpp" />
+    <ClCompile Include="clientsdl.cpp" />
+    <ClCompile Include="common.cpp" />
+    <ClCompile Include="file.cpp" />
+    <ClCompile Include="glextensions.cpp" />
+    <ClCompile Include="mp3.cpp" />
+    <ClCompile Include="physics.cpp" />
+    <ClCompile Include="pushbutton.cpp" />
+    <ClCompile Include="renderingmodule.cpp" />
+    <ClCompile Include="rocket.cpp" />
+    <ClCompile Include="screentext.cpp" />
+    <ClCompile Include="shader.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="uitexturelist.cpp" />
+    <ClCompile Include="winsys.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="audio.h" />
+    <ClInclude Include="basicdraw.h" />
+    <ClInclude Include="clientsdlglobalheader.h" />
+    <ClInclude Include="renderingmodule.h" />
+    <ClInclude Include="common.h" />
+    <ClInclude Include="file.h" />
+    <ClInclude Include="keycontrol.h" />
+    <ClInclude Include="mp3.h" />
+    <ClInclude Include="object.h" />
+    <ClInclude Include="pathfinder.h" />
+    <ClInclude Include="pushbutton.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="resource1.h" />
+    <ClInclude Include="rocket.h" />
+    <ClInclude Include="screentext.h" />
+    <ClInclude Include="shader.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="uitexturelist.h" />
+    <ClInclude Include="winsys.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\clientlogic\clientlogic.vcxproj">
+      <Project>{4436cdfc-34e6-45ea-8504-1b7949adb872}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\clientrocket\clientrocket.vcxproj">
+      <Project>{0e807bcd-6ab2-4579-9a36-436c6cdcc19f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\mmobase\mmobase.vcxproj">
+      <Project>{c516cf17-9007-42be-b6ec-e59f731da7ae}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\rendering_service\rendering_service.vcxproj">
+      <Project>{116886a2-031d-42a0-b2d5-1882a87652af}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\thirdparties\glew-1.9.0\build\vc10\glew_shared.vcxproj">
+      <Project>{55ae3d72-7de6-f19f-aef2-9ae8ca26cf3d}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\thirdparties\lame-3.99.5\vc_solution\vc9_lame_lame.vcxproj">
+      <Project>{eef5b49e-dbd1-4e1b-8b86-c5d64fcbad38}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\thirdparties\lame-3.99.5\vc_solution\vc9_libmp3lame_dll.vcxproj">
+      <Project>{92bd50aa-04d6-4fbf-ace1-468faf6778f2}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\thirdparties\libRocket-master\Build\RocketControls.vcxproj">
+      <Project>{1aac0b29-aec9-4e3f-9edf-b56f8949c41b}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\thirdparties\libRocket-master\Build\RocketCore.vcxproj">
+      <Project>{1aac0b29-aeb9-4e3f-8edf-b46f8949c41b}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\thirdparties\libRocket-master\Build\RocketDebugger.vcxproj">
+      <Project>{1aac0b29-aec9-4e3f-9edf-b56f8949c41a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\thirdparties\ode-0.12\build\vs2012\ode.vcxproj">
+      <Project>{ece449f6-21bb-fd47-96c4-e05a4bce7c42}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\thirdparties\SDL\VisualC\SDL\SDL_VS2012.vcxproj">
+      <Project>{81ce8daf-ebb2-4761-8e45-b71abcca8c68}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\thirdparties\tbb41_20121003oss\build\vsproject\tbb.vcxproj">
+      <Project>{f62787dd-1327-448b-9818-030062bcfaa5}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="fighter.ico" />
+    <Image Include="Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="clientsdl.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

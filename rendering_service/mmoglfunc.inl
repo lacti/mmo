@@ -1,0 +1,13 @@
+/*
+MMOGLFUNC(glGenRenderbuffers);
+MMOGLFUNC(glBindRenderbuffer);
+MMOGLFUNC(glRenderbufferStorage);
+MMOGLFUNC(glGenFramebuffers);
+MMOGLFUNC(glBindFramebuffer);
+MMOGLFUNC(glFramebufferTexture2D);
+MMOGLFUNC(glFramebufferRenderbuffer);
+MMOGLFUNC(glCheckFramebufferStatus);
+MMOGLFUNC(glEnableVertexAttribArray);
+MMOGLFUNC(glGenVertexArrays);
+MMOGLFUNC(glBindVertexArray);
+*/

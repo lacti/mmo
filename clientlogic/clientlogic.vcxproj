@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4436CDFC-34E6-45EA-8504-1B7949ADB872}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>clientlogic</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\lc.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\vsprops\mmo_global.props" />
+    <Import Project="..\vsprops\mmo_common_include.props" />
+    <Import Project="..\vsprops\boost.props" />
+    <Import Project="..\vsprops\tinyxmlSTL.props" />
+    <Import Project="..\vsprops\tbb.props" />
+    <Import Project="..\vsprops\gen_dependence.props" />
+    <Import Project="..\vsprops\bullet.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\vsprops\mmo_global.props" />
+    <Import Project="..\vsprops\mmo_common_include.props" />
+    <Import Project="..\vsprops\boost.props" />
+    <Import Project="..\vsprops\tinyxmlSTL.props" />
+    <Import Project="..\vsprops\tbb.props" />
+    <Import Project="..\vsprops\gen_dependence.props" />
+    <Import Project="..\vsprops\bullet.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;CLIENTLOGIC_EXPORTS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+    </Link>
+    <PreBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;CLIENTLOGIC_EXPORTS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\utf8.h" />
+    <ClInclude Include="animationmanager.h" />
+    <ClInclude Include="clientlogic_private.h" />
+    <ClInclude Include="ClContext.h" />
+    <ClInclude Include="clientlogic.h" />
+    <ClInclude Include="ClientPathFinder.h" />
+    <ClInclude Include="clientpch.h" />
+    <ClInclude Include="component.h" />
+    <ClInclude Include="component_anim.h" />
+    <ClInclude Include="component_collision.h" />
+    <ClInclude Include="component_garbage.h" />
+    <ClInclude Include="component_hp.h" />
+    <ClInclude Include="component_name.h" />
+    <ClInclude Include="component_owner.h" />
+    <ClInclude Include="component_pos0.h" />
+    <ClInclude Include="component_pos1.h" />
+    <ClInclude Include="component_seqanim.h" />
+    <ClInclude Include="component_sid.h" />
+    <ClInclude Include="component_sync.h" />
+    <ClInclude Include="component_entity_template.h" />
+    <ClInclude Include="entity.h" />
+    <ClInclude Include="entity_manager.h" />
+    <ClInclude Include="event.h" />
+    <ClInclude Include="logicworld.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="tilemap.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="animationmanager.cpp" />
+    <ClCompile Include="clientlogic.cpp" />
+    <ClCompile Include="clientlogic_logger.cpp" />
+    <ClCompile Include="ClientPathFinder.cpp" />
+    <ClCompile Include="client_msg_handler.cpp" />
+    <ClCompile Include="client_msg_session.cpp" />
+    <ClCompile Include="component.cpp" />
+    <ClCompile Include="component_anim.cpp" />
+    <ClCompile Include="component_collision.cpp" />
+    <ClCompile Include="component_sync.cpp" />
+    <ClCompile Include="data_center_client.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">clientpch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">clientpch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="entity.cpp" />
+    <ClCompile Include="entity_manager.cpp" />
+    <ClCompile Include="event.cpp" />
+    <ClCompile Include="logicworld.cpp" />
+    <ClCompile Include="spawn.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="tilemap.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\include\msggen\msg_session.ipp" />
+    <None Include="animation.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\resources\data\mmo-data.xml" />
+    <Xml Include="..\resources\data\msg.xml">
+      <SubType>Designer</SubType>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\mmobase\mmobase.vcxproj">
+      <Project>{c516cf17-9007-42be-b6ec-e59f731da7ae}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\ProcMap\ProcMap.vcxproj">
+      <Project>{af64212a-b384-4a9c-a8ee-c5614e6356f5}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\thirdparties\bullet-2.81-rev2613\build\vs2010\BulletCollision.vcxproj">
+      <Project>{74c415b2-c6c1-6c4c-b870-8ad9e9b6a1dc}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\thirdparties\bullet-2.81-rev2613\build\vs2010\BulletDynamics.vcxproj">
+      <Project>{433e4d0b-a1bc-da4e-8ba5-11d69c321967}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\thirdparties\bullet-2.81-rev2613\build\vs2010\LinearMath.vcxproj">
+      <Project>{b8524b31-f8d9-7f4f-9ca6-5a7da3c764c7}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\thirdparties\tbb41_20121003oss\build\vsproject\tbb.vcxproj">
+      <Project>{f62787dd-1327-448b-9818-030062bcfaa5}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\thirdparties\tinyxml\tinyxmlSTL.vcxproj">
+      <Project>{a3a84737-5017-4577-b8a2-79429a25b8b6}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\lc.targets" />
+  </ImportGroup>
+</Project>

@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F4E56B4D-1BE8-3654-B790-162109E2D2E1}</ProjectGuid>
+    <RootNamespace>clientqt_debug</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;" Label="Configuration">
+    <OutputDirectory>..\bin\x86\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\.obj\</IntermediateDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;" Label="Configuration">
+    <OutputDirectory>..\bin\x86\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\.obj\</IntermediateDirectory>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists(&apos;$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props&apos;)" />
+  </ImportGroup>
+  <ImportGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists(&apos;$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props&apos;)" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">..\bin\x86\</OutDir>
+    <IntDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\.obj\</IntDir>
+    <IgnoreImportLibrary Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</IgnoreImportLibrary>
+    <OutDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">..\bin\x86\</OutDir>
+    <IntDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\.obj\</IntDir>
+    <IgnoreImportLibrary Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">
+    <ClCompile>
+      <AdditionalIncludeDirectories>&quot;..\..\Qt\4.8.3\include\QtCore&quot;;&quot;..\..\Qt\4.8.3\include\QtGui&quot;;&quot;..\..\Qt\4.8.3\include\QtOpenGL&quot;;&quot;..\..\Qt\4.8.3\include\QtWebKit&quot;;&quot;..\..\Qt\4.8.3\include&quot;;&quot;..\include&quot;;&quot;..\..\Qt\4.8.3\include\ActiveQt&quot;;&quot;debug\.moc&quot;;&quot;.&quot;;..\..\Qt\4.8.3\mkspecs\default;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zm200 -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\.obj\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForcedIncludeFiles>stdafx.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ObjectFileName>debug\.obj\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)\clientqt_debug.pch</PrecompiledHeaderOutputFile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_WEBKIT_LIB;QT_OPENGL_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_HAVE_MMX;QT_HAVE_3DNOW;QT_HAVE_SSE;QT_HAVE_MMXEXT;QT_HAVE_SSE2;QT_THREAD_SUPPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>.\</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>glu32.lib;opengl32.lib;gdi32.lib;user32.lib;e:\Qt\4.8.3\lib\qtmaind.lib;rendering_service_debug.lib;clientlogic_debug.lib;mmobase_debug.lib;e:\Qt\4.8.3\lib\QtWebKitd4.lib;e:\Qt\4.8.3\lib\QtOpenGLd4.lib;e:\Qt\4.8.3\lib\QtGuid4.lib;e:\Qt\4.8.3\lib\QtCored4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>e:\Qt\4.8.3\lib;../lib/x86;../lib/x86/tbb;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>&quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot; %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\clientqt_debug.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_WEBKIT_LIB;QT_OPENGL_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_HAVE_MMX;QT_HAVE_3DNOW;QT_HAVE_SSE;QT_HAVE_MMXEXT;QT_HAVE_SSE2;QT_THREAD_SUPPORT;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">
+    <ClCompile>
+      <AdditionalIncludeDirectories>&quot;..\..\Qt\4.8.3\include\QtCore&quot;;&quot;..\..\Qt\4.8.3\include\QtGui&quot;;&quot;..\..\Qt\4.8.3\include\QtOpenGL&quot;;&quot;..\..\Qt\4.8.3\include\QtWebKit&quot;;&quot;..\..\Qt\4.8.3\include&quot;;&quot;..\include&quot;;&quot;..\..\Qt\4.8.3\include\ActiveQt&quot;;&quot;release\.moc&quot;;&quot;.&quot;;..\..\Qt\4.8.3\mkspecs\default;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zm200 -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\.obj\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForcedIncludeFiles>stdafx.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ObjectFileName>release\.obj\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)\clientqt.pch</PrecompiledHeaderOutputFile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_NO_DEBUG;QT_WEBKIT_LIB;QT_OPENGL_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_HAVE_MMX;QT_HAVE_3DNOW;QT_HAVE_SSE;QT_HAVE_MMXEXT;QT_HAVE_SSE2;QT_THREAD_SUPPORT;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>.\</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>glu32.lib;opengl32.lib;gdi32.lib;user32.lib;e:\Qt\4.8.3\lib\qtmain.lib;rendering_service_release.lib;clientlogic_release.lib;mmobase_release.lib;e:\Qt\4.8.3\lib\QtWebKit4.lib;e:\Qt\4.8.3\lib\QtOpenGL4.lib;e:\Qt\4.8.3\lib\QtGui4.lib;e:\Qt\4.8.3\lib\QtCore4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>e:\Qt\4.8.3\lib;../lib/x86;../lib/x86/tbb;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>&quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot; %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\clientqt.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_DLL;QT_NO_DEBUG;QT_WEBKIT_LIB;QT_OPENGL_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_HAVE_MMX;QT_HAVE_3DNOW;QT_HAVE_SSE;QT_HAVE_MMXEXT;QT_HAVE_SSE2;QT_THREAD_SUPPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="browser_widget.cpp" />
+    <ClCompile Include="chat_input_box.cpp" />
+    <ClCompile Include="clientlogic_thread.cpp" />
+    <ClCompile Include="escmenu_widget.cpp" />
+    <ClCompile Include="graphics_view.cpp" />
+    <ClCompile Include="inven_widget.cpp" />
+    <ClCompile Include="logger_box.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="model.cpp" />
+    <ClCompile Include="opengl_scene.cpp" />
+    <ClCompile Include="signin_widget.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="browser_widget.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">E:\Qt\4.8.3\bin\moc.exe;browser_widget.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">E:\Qt\4.8.3\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_WEBKIT_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\Qt\4.8.3\include\QtCore&quot; -I&quot;..\..\Qt\4.8.3\include\QtGui&quot; -I&quot;..\..\Qt\4.8.3\include\QtOpenGL&quot; -I&quot;..\..\Qt\4.8.3\include\QtWebKit&quot; -I&quot;..\..\Qt\4.8.3\include&quot; -I&quot;..\include&quot; -I&quot;..\..\Qt\4.8.3\include\ActiveQt&quot; -I&quot;debug\.moc&quot; -I&quot;.&quot; -I..\..\Qt\4.8.3\mkspecs\default -D_MSC_VER=1600 -DWIN32 browser_widget.h -o debug\.moc\moc_browser_widget.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">MOC browser_widget.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\.moc\moc_browser_widget.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">E:\Qt\4.8.3\bin\moc.exe;browser_widget.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">E:\Qt\4.8.3\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_WEBKIT_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\Qt\4.8.3\include\QtCore&quot; -I&quot;..\..\Qt\4.8.3\include\QtGui&quot; -I&quot;..\..\Qt\4.8.3\include\QtOpenGL&quot; -I&quot;..\..\Qt\4.8.3\include\QtWebKit&quot; -I&quot;..\..\Qt\4.8.3\include&quot; -I&quot;..\include&quot; -I&quot;..\..\Qt\4.8.3\include\ActiveQt&quot; -I&quot;release\.moc&quot; -I&quot;.&quot; -I..\..\Qt\4.8.3\mkspecs\default -D_MSC_VER=1600 -DWIN32 browser_widget.h -o release\.moc\moc_browser_widget.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">MOC browser_widget.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\.moc\moc_browser_widget.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="chat_input_box.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">E:\Qt\4.8.3\bin\moc.exe;chat_input_box.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">E:\Qt\4.8.3\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_WEBKIT_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\Qt\4.8.3\include\QtCore&quot; -I&quot;..\..\Qt\4.8.3\include\QtGui&quot; -I&quot;..\..\Qt\4.8.3\include\QtOpenGL&quot; -I&quot;..\..\Qt\4.8.3\include\QtWebKit&quot; -I&quot;..\..\Qt\4.8.3\include&quot; -I&quot;..\include&quot; -I&quot;..\..\Qt\4.8.3\include\ActiveQt&quot; -I&quot;debug\.moc&quot; -I&quot;.&quot; -I..\..\Qt\4.8.3\mkspecs\default -D_MSC_VER=1600 -DWIN32 chat_input_box.h -o debug\.moc\moc_chat_input_box.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">MOC chat_input_box.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\.moc\moc_chat_input_box.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">E:\Qt\4.8.3\bin\moc.exe;chat_input_box.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">E:\Qt\4.8.3\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_WEBKIT_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\Qt\4.8.3\include\QtCore&quot; -I&quot;..\..\Qt\4.8.3\include\QtGui&quot; -I&quot;..\..\Qt\4.8.3\include\QtOpenGL&quot; -I&quot;..\..\Qt\4.8.3\include\QtWebKit&quot; -I&quot;..\..\Qt\4.8.3\include&quot; -I&quot;..\include&quot; -I&quot;..\..\Qt\4.8.3\include\ActiveQt&quot; -I&quot;release\.moc&quot; -I&quot;.&quot; -I..\..\Qt\4.8.3\mkspecs\default -D_MSC_VER=1600 -DWIN32 chat_input_box.h -o release\.moc\moc_chat_input_box.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">MOC chat_input_box.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\.moc\moc_chat_input_box.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="clientlogic_thread.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">E:\Qt\4.8.3\bin\moc.exe;clientlogic_thread.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">E:\Qt\4.8.3\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_WEBKIT_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\Qt\4.8.3\include\QtCore&quot; -I&quot;..\..\Qt\4.8.3\include\QtGui&quot; -I&quot;..\..\Qt\4.8.3\include\QtOpenGL&quot; -I&quot;..\..\Qt\4.8.3\include\QtWebKit&quot; -I&quot;..\..\Qt\4.8.3\include&quot; -I&quot;..\include&quot; -I&quot;..\..\Qt\4.8.3\include\ActiveQt&quot; -I&quot;debug\.moc&quot; -I&quot;.&quot; -I..\..\Qt\4.8.3\mkspecs\default -D_MSC_VER=1600 -DWIN32 clientlogic_thread.h -o debug\.moc\moc_clientlogic_thread.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">MOC clientlogic_thread.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\.moc\moc_clientlogic_thread.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">E:\Qt\4.8.3\bin\moc.exe;clientlogic_thread.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">E:\Qt\4.8.3\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_WEBKIT_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\Qt\4.8.3\include\QtCore&quot; -I&quot;..\..\Qt\4.8.3\include\QtGui&quot; -I&quot;..\..\Qt\4.8.3\include\QtOpenGL&quot; -I&quot;..\..\Qt\4.8.3\include\QtWebKit&quot; -I&quot;..\..\Qt\4.8.3\include&quot; -I&quot;..\include&quot; -I&quot;..\..\Qt\4.8.3\include\ActiveQt&quot; -I&quot;release\.moc&quot; -I&quot;.&quot; -I..\..\Qt\4.8.3\mkspecs\default -D_MSC_VER=1600 -DWIN32 clientlogic_thread.h -o release\.moc\moc_clientlogic_thread.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">MOC clientlogic_thread.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\.moc\moc_clientlogic_thread.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="escmenu_widget.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">E:\Qt\4.8.3\bin\moc.exe;escmenu_widget.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">E:\Qt\4.8.3\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_WEBKIT_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\Qt\4.8.3\include\QtCore&quot; -I&quot;..\..\Qt\4.8.3\include\QtGui&quot; -I&quot;..\..\Qt\4.8.3\include\QtOpenGL&quot; -I&quot;..\..\Qt\4.8.3\include\QtWebKit&quot; -I&quot;..\..\Qt\4.8.3\include&quot; -I&quot;..\include&quot; -I&quot;..\..\Qt\4.8.3\include\ActiveQt&quot; -I&quot;debug\.moc&quot; -I&quot;.&quot; -I..\..\Qt\4.8.3\mkspecs\default -D_MSC_VER=1600 -DWIN32 escmenu_widget.h -o debug\.moc\moc_escmenu_widget.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">MOC escmenu_widget.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\.moc\moc_escmenu_widget.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">E:\Qt\4.8.3\bin\moc.exe;escmenu_widget.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">E:\Qt\4.8.3\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_WEBKIT_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\Qt\4.8.3\include\QtCore&quot; -I&quot;..\..\Qt\4.8.3\include\QtGui&quot; -I&quot;..\..\Qt\4.8.3\include\QtOpenGL&quot; -I&quot;..\..\Qt\4.8.3\include\QtWebKit&quot; -I&quot;..\..\Qt\4.8.3\include&quot; -I&quot;..\include&quot; -I&quot;..\..\Qt\4.8.3\include\ActiveQt&quot; -I&quot;release\.moc&quot; -I&quot;.&quot; -I..\..\Qt\4.8.3\mkspecs\default -D_MSC_VER=1600 -DWIN32 escmenu_widget.h -o release\.moc\moc_escmenu_widget.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">MOC escmenu_widget.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\.moc\moc_escmenu_widget.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="graphics_view.h" />
+    <CustomBuild Include="inven_widget.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">E:\Qt\4.8.3\bin\moc.exe;inven_widget.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">E:\Qt\4.8.3\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_WEBKIT_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\Qt\4.8.3\include\QtCore&quot; -I&quot;..\..\Qt\4.8.3\include\QtGui&quot; -I&quot;..\..\Qt\4.8.3\include\QtOpenGL&quot; -I&quot;..\..\Qt\4.8.3\include\QtWebKit&quot; -I&quot;..\..\Qt\4.8.3\include&quot; -I&quot;..\include&quot; -I&quot;..\..\Qt\4.8.3\include\ActiveQt&quot; -I&quot;debug\.moc&quot; -I&quot;.&quot; -I..\..\Qt\4.8.3\mkspecs\default -D_MSC_VER=1600 -DWIN32 inven_widget.h -o debug\.moc\moc_inven_widget.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">MOC inven_widget.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\.moc\moc_inven_widget.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">E:\Qt\4.8.3\bin\moc.exe;inven_widget.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">E:\Qt\4.8.3\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_WEBKIT_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\Qt\4.8.3\include\QtCore&quot; -I&quot;..\..\Qt\4.8.3\include\QtGui&quot; -I&quot;..\..\Qt\4.8.3\include\QtOpenGL&quot; -I&quot;..\..\Qt\4.8.3\include\QtWebKit&quot; -I&quot;..\..\Qt\4.8.3\include&quot; -I&quot;..\include&quot; -I&quot;..\..\Qt\4.8.3\include\ActiveQt&quot; -I&quot;release\.moc&quot; -I&quot;.&quot; -I..\..\Qt\4.8.3\mkspecs\default -D_MSC_VER=1600 -DWIN32 inven_widget.h -o release\.moc\moc_inven_widget.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">MOC inven_widget.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\.moc\moc_inven_widget.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="logger_box.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">E:\Qt\4.8.3\bin\moc.exe;logger_box.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">E:\Qt\4.8.3\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_WEBKIT_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\Qt\4.8.3\include\QtCore&quot; -I&quot;..\..\Qt\4.8.3\include\QtGui&quot; -I&quot;..\..\Qt\4.8.3\include\QtOpenGL&quot; -I&quot;..\..\Qt\4.8.3\include\QtWebKit&quot; -I&quot;..\..\Qt\4.8.3\include&quot; -I&quot;..\include&quot; -I&quot;..\..\Qt\4.8.3\include\ActiveQt&quot; -I&quot;debug\.moc&quot; -I&quot;.&quot; -I..\..\Qt\4.8.3\mkspecs\default -D_MSC_VER=1600 -DWIN32 logger_box.h -o debug\.moc\moc_logger_box.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">MOC logger_box.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\.moc\moc_logger_box.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">E:\Qt\4.8.3\bin\moc.exe;logger_box.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">E:\Qt\4.8.3\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_WEBKIT_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\Qt\4.8.3\include\QtCore&quot; -I&quot;..\..\Qt\4.8.3\include\QtGui&quot; -I&quot;..\..\Qt\4.8.3\include\QtOpenGL&quot; -I&quot;..\..\Qt\4.8.3\include\QtWebKit&quot; -I&quot;..\..\Qt\4.8.3\include&quot; -I&quot;..\include&quot; -I&quot;..\..\Qt\4.8.3\include\ActiveQt&quot; -I&quot;release\.moc&quot; -I&quot;.&quot; -I..\..\Qt\4.8.3\mkspecs\default -D_MSC_VER=1600 -DWIN32 logger_box.h -o release\.moc\moc_logger_box.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">MOC logger_box.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\.moc\moc_logger_box.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="model.h" />
+    <CustomBuild Include="opengl_scene.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">E:\Qt\4.8.3\bin\moc.exe;opengl_scene.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">E:\Qt\4.8.3\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_WEBKIT_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\Qt\4.8.3\include\QtCore&quot; -I&quot;..\..\Qt\4.8.3\include\QtGui&quot; -I&quot;..\..\Qt\4.8.3\include\QtOpenGL&quot; -I&quot;..\..\Qt\4.8.3\include\QtWebKit&quot; -I&quot;..\..\Qt\4.8.3\include&quot; -I&quot;..\include&quot; -I&quot;..\..\Qt\4.8.3\include\ActiveQt&quot; -I&quot;debug\.moc&quot; -I&quot;.&quot; -I..\..\Qt\4.8.3\mkspecs\default -D_MSC_VER=1600 -DWIN32 opengl_scene.h -o debug\.moc\moc_opengl_scene.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">MOC opengl_scene.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\.moc\moc_opengl_scene.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">E:\Qt\4.8.3\bin\moc.exe;opengl_scene.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">E:\Qt\4.8.3\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_WEBKIT_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\Qt\4.8.3\include\QtCore&quot; -I&quot;..\..\Qt\4.8.3\include\QtGui&quot; -I&quot;..\..\Qt\4.8.3\include\QtOpenGL&quot; -I&quot;..\..\Qt\4.8.3\include\QtWebKit&quot; -I&quot;..\..\Qt\4.8.3\include&quot; -I&quot;..\include&quot; -I&quot;..\..\Qt\4.8.3\include\ActiveQt&quot; -I&quot;release\.moc&quot; -I&quot;.&quot; -I..\..\Qt\4.8.3\mkspecs\default -D_MSC_VER=1600 -DWIN32 opengl_scene.h -o release\.moc\moc_opengl_scene.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">MOC opengl_scene.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\.moc\moc_opengl_scene.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="point3d.h" />
+    <CustomBuild Include="signin_widget.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">E:\Qt\4.8.3\bin\moc.exe;signin_widget.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">E:\Qt\4.8.3\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_WEBKIT_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\Qt\4.8.3\include\QtCore&quot; -I&quot;..\..\Qt\4.8.3\include\QtGui&quot; -I&quot;..\..\Qt\4.8.3\include\QtOpenGL&quot; -I&quot;..\..\Qt\4.8.3\include\QtWebKit&quot; -I&quot;..\..\Qt\4.8.3\include&quot; -I&quot;..\include&quot; -I&quot;..\..\Qt\4.8.3\include\ActiveQt&quot; -I&quot;debug\.moc&quot; -I&quot;.&quot; -I..\..\Qt\4.8.3\mkspecs\default -D_MSC_VER=1600 -DWIN32 signin_widget.h -o debug\.moc\moc_signin_widget.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">MOC signin_widget.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\.moc\moc_signin_widget.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">E:\Qt\4.8.3\bin\moc.exe;signin_widget.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">E:\Qt\4.8.3\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_WEBKIT_LIB -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;..\..\Qt\4.8.3\include\QtCore&quot; -I&quot;..\..\Qt\4.8.3\include\QtGui&quot; -I&quot;..\..\Qt\4.8.3\include\QtOpenGL&quot; -I&quot;..\..\Qt\4.8.3\include\QtWebKit&quot; -I&quot;..\..\Qt\4.8.3\include&quot; -I&quot;..\include&quot; -I&quot;..\..\Qt\4.8.3\include\ActiveQt&quot; -I&quot;release\.moc&quot; -I&quot;.&quot; -I..\..\Qt\4.8.3\mkspecs\default -D_MSC_VER=1600 -DWIN32 signin_widget.h -o release\.moc\moc_signin_widget.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">MOC signin_widget.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\.moc\moc_signin_widget.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="stdafx.h">
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">echo /*-------------------------------------------------------------------- >stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;echo * Precompiled header source file used by Visual Studio.NET to generate>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;echo * the .pch file.>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;echo *>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;echo * Due to issues with the dependencies checker within the IDE, it>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;echo * sometimes fails to recompile the PCH file, if we force the IDE to>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;echo * create the PCH file directly from the header file.>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;echo *>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;echo * This file is auto-generated by qmake since no PRECOMPILED_SOURCE was>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;echo * specified, and is used as the common stdafx.cpp. The file is only>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;echo * generated when creating .vcproj project files, and is not used for>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;echo * command line compilations by nmake.>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;echo *>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;echo * WARNING: All changes made in this file will be lost.>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;echo --------------------------------------------------------------------*/>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;echo #include &quot;stdafx.h&quot;>>stdafx.h.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">Generating precompiled header source file &apos;stdafx.h.cpp&apos; ...</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">stdafx.h.cpp;%(Outputs)</Outputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">echo /*-------------------------------------------------------------------- >stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;echo * Precompiled header source file used by Visual Studio.NET to generate>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;echo * the .pch file.>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;echo *>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;echo * Due to issues with the dependencies checker within the IDE, it>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;echo * sometimes fails to recompile the PCH file, if we force the IDE to>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;echo * create the PCH file directly from the header file.>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;echo *>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;echo * This file is auto-generated by qmake since no PRECOMPILED_SOURCE was>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;echo * specified, and is used as the common stdafx.cpp. The file is only>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;echo * generated when creating .vcproj project files, and is not used for>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;echo * command line compilations by nmake.>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;echo *>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;echo * WARNING: All changes made in this file will be lost.>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;echo --------------------------------------------------------------------*/>>stdafx.h.cpp&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;echo #include &quot;stdafx.h&quot;>>stdafx.h.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">Generating precompiled header source file &apos;stdafx.h.cpp&apos; ...</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">stdafx.h.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="debug\.moc\moc_browser_widget.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\.moc\moc_browser_widget.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\.moc\moc_chat_input_box.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\.moc\moc_chat_input_box.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\.moc\moc_clientlogic_thread.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\.moc\moc_clientlogic_thread.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\.moc\moc_escmenu_widget.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\.moc\moc_escmenu_widget.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\.moc\moc_inven_widget.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\.moc\moc_inven_widget.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\.moc\moc_logger_box.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\.moc\moc_logger_box.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\.moc\moc_opengl_scene.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\.moc\moc_opengl_scene.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\.moc\moc_signin_widget.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\.moc\moc_signin_widget.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\qrc_client.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\qrc_client.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="stdafx.h.cpp">
+      <ForcedIncludeFiles Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">$(NOINHERIT)</ForcedIncludeFiles>
+      <PrecompiledHeaderFile Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">Create</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">$(NOINHERIT)</ForcedIncludeFiles>
+      <PrecompiledHeaderFile Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClInclude Include="ui_browser.h" />
+    <ClInclude Include="ui_dialog.h" />
+    <ClInclude Include="ui_escmenu.h" />
+    <ClInclude Include="ui_inven2.h" />
+    <ClInclude Include="ui_signin.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="browser.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">E:\Qt\4.8.3\bin\uic.exe;QtWebKit\QWebView;browser.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">E:\Qt\4.8.3\bin\uic.exe browser.ui -o ui_browser.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">UIC browser.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">ui_browser.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">E:\Qt\4.8.3\bin\uic.exe;QtWebKit\QWebView;browser.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">E:\Qt\4.8.3\bin\uic.exe browser.ui -o ui_browser.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">UIC browser.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">ui_browser.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="dialog.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">E:\Qt\4.8.3\bin\uic.exe;dialog.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">E:\Qt\4.8.3\bin\uic.exe dialog.ui -o ui_dialog.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">UIC dialog.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">ui_dialog.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">E:\Qt\4.8.3\bin\uic.exe;dialog.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">E:\Qt\4.8.3\bin\uic.exe dialog.ui -o ui_dialog.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">UIC dialog.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">ui_dialog.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="escmenu.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">E:\Qt\4.8.3\bin\uic.exe;escmenu.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">E:\Qt\4.8.3\bin\uic.exe escmenu.ui -o ui_escmenu.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">UIC escmenu.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">ui_escmenu.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">E:\Qt\4.8.3\bin\uic.exe;escmenu.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">E:\Qt\4.8.3\bin\uic.exe escmenu.ui -o ui_escmenu.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">UIC escmenu.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">ui_escmenu.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="inven2.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">E:\Qt\4.8.3\bin\uic.exe;inven2.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">E:\Qt\4.8.3\bin\uic.exe inven2.ui -o ui_inven2.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">UIC inven2.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">ui_inven2.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">E:\Qt\4.8.3\bin\uic.exe;inven2.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">E:\Qt\4.8.3\bin\uic.exe inven2.ui -o ui_inven2.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">UIC inven2.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">ui_inven2.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="signin.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">E:\Qt\4.8.3\bin\uic.exe;QtWebKit\QWebView;signin.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">E:\Qt\4.8.3\bin\uic.exe signin.ui -o ui_signin.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">UIC signin.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">ui_signin.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">E:\Qt\4.8.3\bin\uic.exe;QtWebKit\QWebView;signin.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">E:\Qt\4.8.3\bin\uic.exe signin.ui -o ui_signin.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">UIC signin.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">ui_signin.h;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\001-Weapon01.png" />
+    <None Include="icons\002-Weapon02.png" />
+    <None Include="icons\003-Weapon03.png" />
+    <None Include="icons\004-Weapon04.png" />
+    <None Include="icons\005-Weapon05.png" />
+    <None Include="icons\006-Weapon06.png" />
+    <None Include="icons\007-Weapon07.png" />
+    <None Include="icons\008-Weapon08.png" />
+    <None Include="icons\009-Shield01.png" />
+    <None Include="icons\010-Head01.png" />
+    <None Include="icons\011-Head02.png" />
+    <None Include="icons\012-Head03.png" />
+    <None Include="icons\013-Body01.png" />
+    <None Include="icons\014-Body02.png" />
+    <None Include="icons\015-Body03.png" />
+    <None Include="icons\016-Accessory01.png" />
+    <None Include="icons\017-Accessory02.png" />
+    <None Include="icons\018-Accessory03.png" />
+    <None Include="icons\019-Accessory04.png" />
+    <None Include="icons\020-Accessory05.png" />
+    <None Include="icons\021-Potion01.png" />
+    <None Include="icons\022-Potion02.png" />
+    <None Include="icons\023-Potion03.png" />
+    <None Include="icons\024-Potion04.png" />
+    <None Include="icons\025-Herb01.png" />
+    <None Include="icons\026-Herb02.png" />
+    <None Include="icons\027-Herb03.png" />
+    <None Include="icons\028-Herb04.png" />
+    <None Include="icons\029-Key01.png" />
+    <None Include="icons\030-Key02.png" />
+    <None Include="icons\031-Key03.png" />
+    <None Include="icons\032-Item01.png" />
+    <None Include="icons\033-Item02.png" />
+    <None Include="icons\034-Item03.png" />
+    <None Include="icons\035-Item04.png" />
+    <None Include="icons\036-Item05.png" />
+    <None Include="icons\037-Item06.png" />
+    <None Include="icons\038-Item07.png" />
+    <None Include="icons\039-Item08.png" />
+    <None Include="icons\040-Item09.png" />
+    <None Include="icons\041-Item10.png" />
+    <None Include="icons\042-Item11.png" />
+    <None Include="icons\043-Item12.png" />
+    <None Include="icons\044-Skill01.png" />
+    <None Include="icons\045-Skill02.png" />
+    <None Include="icons\046-Skill03.png" />
+    <None Include="icons\047-Skill04.png" />
+    <None Include="icons\048-Skill05.png" />
+    <None Include="icons\049-Skill06.png" />
+    <None Include="icons\050-Skill07.png" />
+    <CustomBuild Include="client.qrc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">E:\Qt\4.8.3\bin\rcc.exe;client.qrc;icons\001-Weapon01.png;icons\002-Weapon02.png;icons\003-Weapon03.png;icons\004-Weapon04.png;icons\005-Weapon05.png;icons\006-Weapon06.png;icons\007-Weapon07.png;icons\008-Weapon08.png;icons\009-Shield01.png;icons\010-Head01.png;icons\011-Head02.png;icons\012-Head03.png;icons\013-Body01.png;icons\014-Body02.png;icons\015-Body03.png;icons\016-Accessory01.png;icons\017-Accessory02.png;icons\018-Accessory03.png;icons\019-Accessory04.png;icons\020-Accessory05.png;icons\021-Potion01.png;icons\022-Potion02.png;icons\023-Potion03.png;icons\024-Potion04.png;icons\025-Herb01.png;icons\026-Herb02.png;icons\027-Herb03.png;icons\028-Herb04.png;icons\029-Key01.png;icons\030-Key02.png;icons\031-Key03.png;icons\032-Item01.png;icons\033-Item02.png;icons\034-Item03.png;icons\035-Item04.png;icons\036-Item05.png;icons\037-Item06.png;icons\038-Item07.png;icons\039-Item08.png;icons\040-Item09.png;icons\041-Item10.png;icons\042-Item11.png;icons\043-Item12.png;icons\044-Skill01.png;icons\045-Skill02.png;icons\046-Skill03.png;icons\047-Skill04.png;icons\048-Skill05.png;icons\049-Skill06.png;icons\050-Skill07.png;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">E:\Qt\4.8.3\bin\rcc.exe -name client client.qrc -o debug\qrc_client.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">RCC client.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\qrc_client.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">E:\Qt\4.8.3\bin\rcc.exe;client.qrc;icons\001-Weapon01.png;icons\002-Weapon02.png;icons\003-Weapon03.png;icons\004-Weapon04.png;icons\005-Weapon05.png;icons\006-Weapon06.png;icons\007-Weapon07.png;icons\008-Weapon08.png;icons\009-Shield01.png;icons\010-Head01.png;icons\011-Head02.png;icons\012-Head03.png;icons\013-Body01.png;icons\014-Body02.png;icons\015-Body03.png;icons\016-Accessory01.png;icons\017-Accessory02.png;icons\018-Accessory03.png;icons\019-Accessory04.png;icons\020-Accessory05.png;icons\021-Potion01.png;icons\022-Potion02.png;icons\023-Potion03.png;icons\024-Potion04.png;icons\025-Herb01.png;icons\026-Herb02.png;icons\027-Herb03.png;icons\028-Herb04.png;icons\029-Key01.png;icons\030-Key02.png;icons\031-Key03.png;icons\032-Item01.png;icons\033-Item02.png;icons\034-Item03.png;icons\035-Item04.png;icons\036-Item05.png;icons\037-Item06.png;icons\038-Item07.png;icons\039-Item08.png;icons\040-Item09.png;icons\041-Item10.png;icons\042-Item11.png;icons\043-Item12.png;icons\044-Skill01.png;icons\045-Skill02.png;icons\046-Skill03.png;icons\047-Skill04.png;icons\048-Skill05.png;icons\049-Skill06.png;icons\050-Skill07.png;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">E:\Qt\4.8.3\bin\rcc.exe -name client client.qrc -o release\qrc_client.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">RCC client.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\qrc_client.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
