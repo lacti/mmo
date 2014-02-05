@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Demos">
+      <UniqueIdentifier>{4C950142-AD07-A446-A909-66044B3C76DD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demos\CharacterDemo">
+      <UniqueIdentifier>{7C0EA50F-D04A-2C40-B5D1-7DE2BE167B85}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Demos\CharacterDemo\CharacterDemo.h">
+      <Filter>Demos\CharacterDemo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Demos\CharacterDemo\DynamicCharacterController.h">
+      <Filter>Demos\CharacterDemo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Demos\CharacterDemo\BspLoader.h">
+      <Filter>Demos\CharacterDemo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Demos\CharacterDemo\BspConverter.h">
+      <Filter>Demos\CharacterDemo</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Demos\CharacterDemo\CharacterDemo.cpp">
+      <Filter>Demos\CharacterDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Demos\CharacterDemo\DynamicCharacterController.cpp">
+      <Filter>Demos\CharacterDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Demos\CharacterDemo\main.cpp">
+      <Filter>Demos\CharacterDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Demos\CharacterDemo\BspLoader.cpp">
+      <Filter>Demos\CharacterDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Demos\CharacterDemo\BspConverter.cpp">
+      <Filter>Demos\CharacterDemo</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\bullet.rc" />
+  </ItemGroup>
+</Project>

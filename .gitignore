@@ -33,10 +33,6 @@ ipch
 *.suo
 *.sdf
 *.log
-Debug
-Release
-debug
-release
 *.hash
 *_Release.lib
 *_Debug.lib
@@ -150,8 +146,9 @@ Makefile$
 Makefile.pre$
 TAGS$
 autom4te.cache$
-build/
 buildno$
+Debug/
+Release/
 config.cache
 config.log
 config.status
@@ -180,8 +177,6 @@ Parser/pgen.stamp$
 ^core
 ^python-gdb.py
 ^pybuilddir.txt
-
-syntax: glob
 python.exe-gdb.py
 libpython*.a
 libpython*.so*

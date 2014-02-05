@@ -1,0 +1,553 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugDoubleDLL|Win32">
+      <Configuration>DebugDoubleDLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugDoubleLib|Win32">
+      <Configuration>DebugDoubleLib</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugSingleDLL|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugSingleLib|Win32">
+      <Configuration>DebugSingleLib</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDoubleDLL|Win32">
+      <Configuration>ReleaseDoubleDLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDoubleLib|Win32">
+      <Configuration>ReleaseDoubleLib</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseSingleLib|Win32">
+      <Configuration>ReleaseSingleLib</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{ECE449F6-21BB-FD47-96C4-E05A4BCE7C42}</ProjectGuid>
+    <RootNamespace>ode</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDoubleLib|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDoubleDLL|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSingleLib|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDoubleLib|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDoubleDLL|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSingleLib|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDoubleLib|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\vsprops\mmo_global.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDoubleDLL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\vsprops\mmo_global.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSingleLib|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\vsprops\mmo_global.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\vsprops\mmo_global.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDoubleLib|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\vsprops\mmo_global.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDoubleDLL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\vsprops\mmo_global.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugSingleLib|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\vsprops\mmo_global.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\vsprops\mmo_global.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.51106.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSingleLib|Win32'">
+    <OutDir>..\..\lib\DebugSingleLib\</OutDir>
+    <IntDir>obj\DebugSingleLib\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDoubleDLL|Win32'">
+    <OutDir>..\..\lib\DebugDoubleDLL\</OutDir>
+    <IntDir>obj\DebugDoubleDLL\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDoubleLib|Win32'">
+    <OutDir>..\..\lib\DebugDoubleLib\</OutDir>
+    <IntDir>obj\DebugDoubleLib\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSingleLib|Win32'">
+    <OutDir>..\..\lib\ReleaseSingleLib\</OutDir>
+    <IntDir>obj\ReleaseSingleLib\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDoubleDLL|Win32'">
+    <OutDir>..\..\lib\ReleaseDoubleDLL\</OutDir>
+    <IntDir>obj\ReleaseDoubleDLL\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDoubleLib|Win32'">
+    <OutDir>..\..\lib\ReleaseDoubleLib\</OutDir>
+    <IntDir>obj\ReleaseDoubleLib\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\include;..\..\ode\src;..\..\ode\src\joints;..\..\OPCODE;..\..\GIMPACT\include;..\..\ou\include;..\..\libccd\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;dSINGLE;CCD_SINGLE;WIN32;_CRT_SECURE_NO_DEPRECATE;_OU_NAMESPACE=odeou;dLIBCCD_ENABLED;dLIBCCD_CYL_CYL;dLIBCCD_CAP_CYL;ODE_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <ProgramDataBaseFileName>$(OutDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;dSINGLE;CCD_SINGLE;WIN32;_CRT_SECURE_NO_DEPRECATE;_OU_NAMESPACE=odeou;dLIBCCD_ENABLED;dLIBCCD_CYL_CYL;ODE_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\include;..\..\ode\src;..\..\ode\src\joints;..\..\OPCODE;..\..\GIMPACT\include;..\..\ou\include;..\..\libccd\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>user32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugSingleLib|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\include;..\..\ode\src;..\..\ode\src\joints;..\..\OPCODE;..\..\GIMPACT\include;..\..\ou\include;..\..\libccd\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;dSINGLE;CCD_SINGLE;WIN32;_CRT_SECURE_NO_DEPRECATE;_OU_NAMESPACE=odeou;dLIBCCD_ENABLED;dLIBCCD_CYL_CYL;ODE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <ProgramDataBaseFileName>$(OutDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;dSINGLE;CCD_SINGLE;WIN32;_CRT_SECURE_NO_DEPRECATE;_OU_NAMESPACE=odeou;dLIBCCD_ENABLED;dLIBCCD_CYL_CYL;ODE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\include;..\..\ode\src;..\..\ode\src\joints;..\..\OPCODE;..\..\GIMPACT\include;..\..\ou\include;..\..\libccd\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalDependencies>user32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)ode_singled.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDoubleDLL|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\include;..\..\ode\src;..\..\ode\src\joints;..\..\OPCODE;..\..\GIMPACT\include;..\..\ou\include;..\..\libccd\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;dDOUBLE;CCD_DOUBLE;WIN32;_CRT_SECURE_NO_DEPRECATE;_OU_NAMESPACE=odeou;dLIBCCD_ENABLED;dLIBCCD_CYL_CYL;ODE_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <ProgramDataBaseFileName>$(OutDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;dDOUBLE;CCD_DOUBLE;WIN32;_CRT_SECURE_NO_DEPRECATE;_OU_NAMESPACE=odeou;dLIBCCD_ENABLED;dLIBCCD_CYL_CYL;ODE_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\include;..\..\ode\src;..\..\ode\src\joints;..\..\OPCODE;..\..\GIMPACT\include;..\..\ou\include;..\..\libccd\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>user32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)ode_doubled.dll</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(ProjectName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>..\..\lib\DebugDoubleDLL\ode_doubled.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDoubleLib|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\include;..\..\ode\src;..\..\ode\src\joints;..\..\OPCODE;..\..\GIMPACT\include;..\..\ou\include;..\..\libccd\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;dDOUBLE;CCD_DOUBLE;WIN32;_CRT_SECURE_NO_DEPRECATE;_OU_NAMESPACE=odeou;dLIBCCD_ENABLED;dLIBCCD_CYL_CYL;ODE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <ProgramDataBaseFileName>$(OutDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;dDOUBLE;CCD_DOUBLE;WIN32;_CRT_SECURE_NO_DEPRECATE;_OU_NAMESPACE=odeou;dLIBCCD_ENABLED;dLIBCCD_CYL_CYL;ODE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\include;..\..\ode\src;..\..\ode\src\joints;..\..\OPCODE;..\..\GIMPACT\include;..\..\ou\include;..\..\libccd\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalDependencies>user32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)ode_doubled.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>..\..\include;..\..\ode\src;..\..\ode\src\joints;..\..\OPCODE;..\..\GIMPACT\include;..\..\ou\include;..\..\libccd\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>dSINGLE;CCD_SINGLE;WIN32;_CRT_SECURE_NO_DEPRECATE;_OU_NAMESPACE=odeou;dLIBCCD_ENABLED;dLIBCCD_CYL_CYL;dLIBCCD_CAP_CYL;ODE_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat />
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>dSINGLE;CCD_SINGLE;WIN32;_CRT_SECURE_NO_DEPRECATE;_OU_NAMESPACE=odeou;dLIBCCD_ENABLED;dLIBCCD_CYL_CYL;ODE_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\include;..\..\ode\src;..\..\ode\src\joints;..\..\OPCODE;..\..\GIMPACT\include;..\..\ou\include;..\..\libccd\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>user32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSingleLib|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>..\..\include;..\..\ode\src;..\..\ode\src\joints;..\..\OPCODE;..\..\GIMPACT\include;..\..\ou\include;..\..\libccd\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>dSINGLE;CCD_SINGLE;WIN32;_CRT_SECURE_NO_DEPRECATE;_OU_NAMESPACE=odeou;dLIBCCD_ENABLED;dLIBCCD_CYL_CYL;ODE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <ProgramDataBaseFileName>$(OutDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+      <DebugInformationFormat />
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>dSINGLE;CCD_SINGLE;WIN32;_CRT_SECURE_NO_DEPRECATE;_OU_NAMESPACE=odeou;dLIBCCD_ENABLED;dLIBCCD_CYL_CYL;ODE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\include;..\..\ode\src;..\..\ode\src\joints;..\..\OPCODE;..\..\GIMPACT\include;..\..\ou\include;..\..\libccd\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalDependencies>user32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)ode_single.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDoubleDLL|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>..\..\include;..\..\ode\src;..\..\ode\src\joints;..\..\OPCODE;..\..\GIMPACT\include;..\..\ou\include;..\..\libccd\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>dDOUBLE;CCD_DOUBLE;WIN32;_CRT_SECURE_NO_DEPRECATE;_OU_NAMESPACE=odeou;dLIBCCD_ENABLED;dLIBCCD_CYL_CYL;ODE_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <ProgramDataBaseFileName>$(OutDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+      <DebugInformationFormat />
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>dDOUBLE;CCD_DOUBLE;WIN32;_CRT_SECURE_NO_DEPRECATE;_OU_NAMESPACE=odeou;dLIBCCD_ENABLED;dLIBCCD_CYL_CYL;ODE_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\include;..\..\ode\src;..\..\ode\src\joints;..\..\OPCODE;..\..\GIMPACT\include;..\..\ou\include;..\..\libccd\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>user32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)ode_double.dll</OutputFile>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>..\..\lib\ReleaseDoubleDLL\ode_double.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDoubleLib|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>..\..\include;..\..\ode\src;..\..\ode\src\joints;..\..\OPCODE;..\..\GIMPACT\include;..\..\ou\include;..\..\libccd\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>dDOUBLE;CCD_DOUBLE;WIN32;_CRT_SECURE_NO_DEPRECATE;_OU_NAMESPACE=odeou;dLIBCCD_ENABLED;dLIBCCD_CYL_CYL;ODE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <ProgramDataBaseFileName>$(OutDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+      <DebugInformationFormat />
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>dDOUBLE;CCD_DOUBLE;WIN32;_CRT_SECURE_NO_DEPRECATE;_OU_NAMESPACE=odeou;dLIBCCD_ENABLED;dLIBCCD_CYL_CYL;ODE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\include;..\..\ode\src;..\..\ode\src\joints;..\..\OPCODE;..\..\GIMPACT\include;..\..\ou\include;..\..\libccd\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalDependencies>user32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)ode_double.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\ode\collision.h" />
+    <ClInclude Include="..\..\include\ode\collision_space.h" />
+    <ClInclude Include="..\..\include\ode\collision_trimesh.h" />
+    <ClInclude Include="..\..\include\ode\common.h" />
+    <ClInclude Include="..\..\include\ode\compatibility.h" />
+    <ClInclude Include="..\..\include\ode\contact.h" />
+    <ClInclude Include="..\..\include\ode\error.h" />
+    <ClInclude Include="..\..\include\ode\export-dif.h" />
+    <ClInclude Include="..\..\include\ode\mass.h" />
+    <ClInclude Include="..\..\include\ode\matrix.h" />
+    <ClInclude Include="..\..\include\ode\memory.h" />
+    <ClInclude Include="..\..\include\ode\misc.h" />
+    <ClInclude Include="..\..\include\ode\objects.h" />
+    <ClInclude Include="..\..\include\ode\ode.h" />
+    <ClInclude Include="..\..\include\ode\odeconfig.h" />
+    <ClInclude Include="..\..\include\ode\odecpp.h" />
+    <ClInclude Include="..\..\include\ode\odecpp_collision.h" />
+    <ClInclude Include="..\..\include\ode\odeinit.h" />
+    <ClInclude Include="..\..\include\ode\odemath.h" />
+    <ClInclude Include="..\..\include\ode\odemath_legacy.h" />
+    <ClInclude Include="..\..\include\ode\rotation.h" />
+    <ClInclude Include="..\..\include\ode\timer.h" />
+    <ClInclude Include="..\..\ode\src\joints\amotor.h" />
+    <ClInclude Include="..\..\ode\src\joints\ball.h" />
+    <ClInclude Include="..\..\ode\src\joints\contact.h" />
+    <ClInclude Include="..\..\ode\src\joints\fixed.h" />
+    <ClInclude Include="..\..\ode\src\joints\hinge.h" />
+    <ClInclude Include="..\..\ode\src\joints\hinge2.h" />
+    <ClInclude Include="..\..\ode\src\joints\joint.h" />
+    <ClInclude Include="..\..\ode\src\joints\joints.h" />
+    <ClInclude Include="..\..\ode\src\joints\joint_internal.h" />
+    <ClInclude Include="..\..\ode\src\joints\lmotor.h" />
+    <ClInclude Include="..\..\ode\src\joints\null.h" />
+    <ClInclude Include="..\..\ode\src\joints\piston.h" />
+    <ClInclude Include="..\..\ode\src\joints\plane2d.h" />
+    <ClInclude Include="..\..\ode\src\joints\pr.h" />
+    <ClInclude Include="..\..\ode\src\joints\pu.h" />
+    <ClInclude Include="..\..\ode\src\joints\slider.h" />
+    <ClInclude Include="..\..\ode\src\joints\universal.h" />
+    <ClInclude Include="..\..\ode\src\array.h" />
+    <ClInclude Include="..\..\ode\src\collision_kernel.h" />
+    <ClInclude Include="..\..\ode\src\collision_libccd.h" />
+    <ClInclude Include="..\..\ode\src\collision_space_internal.h" />
+    <ClInclude Include="..\..\ode\src\collision_std.h" />
+    <ClInclude Include="..\..\ode\src\collision_transform.h" />
+    <ClInclude Include="..\..\ode\src\collision_trimesh_colliders.h" />
+    <ClInclude Include="..\..\ode\src\collision_trimesh_internal.h" />
+    <ClInclude Include="..\..\ode\src\collision_util.h" />
+    <ClInclude Include="..\..\ode\src\config.h" />
+    <ClInclude Include="..\..\ode\src\heightfield.h" />
+    <ClInclude Include="..\..\ode\src\lcp.h" />
+    <ClInclude Include="..\..\ode\src\mat.h" />
+    <ClInclude Include="..\..\ode\src\objects.h" />
+    <ClInclude Include="..\..\ode\src\obstack.h" />
+    <ClInclude Include="..\..\ode\src\odeou.h" />
+    <ClInclude Include="..\..\ode\src\odetls.h" />
+    <ClInclude Include="..\..\ode\src\quickstep.h" />
+    <ClInclude Include="..\..\ode\src\step.h" />
+    <ClInclude Include="..\..\ode\src\util.h" />
+    <ClInclude Include="..\..\GIMPACT\include\GIMPACT\gimpact.h" />
+    <ClInclude Include="..\..\GIMPACT\include\GIMPACT\gim_boxpruning.h" />
+    <ClInclude Include="..\..\GIMPACT\include\GIMPACT\gim_contact.h" />
+    <ClInclude Include="..\..\GIMPACT\include\GIMPACT\gim_geometry.h" />
+    <ClInclude Include="..\..\GIMPACT\include\GIMPACT\gim_math.h" />
+    <ClInclude Include="..\..\GIMPACT\include\GIMPACT\gim_memory.h" />
+    <ClInclude Include="..\..\GIMPACT\include\GIMPACT\gim_radixsort.h" />
+    <ClInclude Include="..\..\GIMPACT\include\GIMPACT\gim_trimesh.h" />
+    <ClInclude Include="..\..\GIMPACT\include\GIMPACT\gim_tri_capsule_collision.h" />
+    <ClInclude Include="..\..\GIMPACT\include\GIMPACT\gim_tri_collision.h" />
+    <ClInclude Include="..\..\GIMPACT\include\GIMPACT\gim_tri_sphere_collision.h" />
+    <ClInclude Include="..\..\ou\include\ou\assert.h" />
+    <ClInclude Include="..\..\ou\include\ou\atomic.h" />
+    <ClInclude Include="..\..\ou\include\ou\atomicflags.h" />
+    <ClInclude Include="..\..\ou\include\ou\customization.h" />
+    <ClInclude Include="..\..\ou\include\ou\enumarrays.h" />
+    <ClInclude Include="..\..\ou\include\ou\flags.h" />
+    <ClInclude Include="..\..\ou\include\ou\flagsdefines.h" />
+    <ClInclude Include="..\..\ou\include\ou\inttypes.h" />
+    <ClInclude Include="..\..\ou\include\ou\macros.h" />
+    <ClInclude Include="..\..\ou\include\ou\malloc.h" />
+    <ClInclude Include="..\..\ou\include\ou\namespace.h" />
+    <ClInclude Include="..\..\ou\include\ou\platform.h" />
+    <ClInclude Include="..\..\ou\include\ou\simpleflags.h" />
+    <ClInclude Include="..\..\ou\include\ou\templates.h" />
+    <ClInclude Include="..\..\ou\include\ou\threadlocalstorage.h" />
+    <ClInclude Include="..\..\ou\include\ou\typewrapper.h" />
+    <ClInclude Include="..\..\libccd\src\ccd\alloc.h" />
+    <ClInclude Include="..\..\libccd\src\ccd\ccd.h" />
+    <ClInclude Include="..\..\libccd\src\ccd\compiler.h" />
+    <ClInclude Include="..\..\libccd\src\ccd\dbg.h" />
+    <ClInclude Include="..\..\libccd\src\ccd\list.h" />
+    <ClInclude Include="..\..\libccd\src\ccd\polytope.h" />
+    <ClInclude Include="..\..\libccd\src\ccd\quat.h" />
+    <ClInclude Include="..\..\libccd\src\ccd\simplex.h" />
+    <ClInclude Include="..\..\libccd\src\ccd\support.h" />
+    <ClInclude Include="..\..\libccd\src\ccd\vec3.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\ode\src\joints\amotor.cpp" />
+    <ClCompile Include="..\..\ode\src\joints\ball.cpp" />
+    <ClCompile Include="..\..\ode\src\joints\contact.cpp" />
+    <ClCompile Include="..\..\ode\src\joints\fixed.cpp" />
+    <ClCompile Include="..\..\ode\src\joints\hinge.cpp" />
+    <ClCompile Include="..\..\ode\src\joints\hinge2.cpp" />
+    <ClCompile Include="..\..\ode\src\joints\joint.cpp" />
+    <ClCompile Include="..\..\ode\src\joints\lmotor.cpp" />
+    <ClCompile Include="..\..\ode\src\joints\null.cpp" />
+    <ClCompile Include="..\..\ode\src\joints\piston.cpp" />
+    <ClCompile Include="..\..\ode\src\joints\plane2d.cpp" />
+    <ClCompile Include="..\..\ode\src\joints\pr.cpp" />
+    <ClCompile Include="..\..\ode\src\joints\pu.cpp" />
+    <ClCompile Include="..\..\ode\src\joints\slider.cpp" />
+    <ClCompile Include="..\..\ode\src\joints\universal.cpp" />
+    <ClCompile Include="..\..\ode\src\fastdot.c" />
+    <ClCompile Include="..\..\ode\src\fastldlt.c" />
+    <ClCompile Include="..\..\ode\src\fastlsolve.c" />
+    <ClCompile Include="..\..\ode\src\fastltsolve.c" />
+    <ClCompile Include="..\..\ode\src\nextafterf.c" />
+    <ClCompile Include="..\..\ode\src\array.cpp" />
+    <ClCompile Include="..\..\ode\src\box.cpp" />
+    <ClCompile Include="..\..\ode\src\capsule.cpp" />
+    <ClCompile Include="..\..\ode\src\collision_cylinder_box.cpp" />
+    <ClCompile Include="..\..\ode\src\collision_cylinder_plane.cpp" />
+    <ClCompile Include="..\..\ode\src\collision_cylinder_sphere.cpp" />
+    <ClCompile Include="..\..\ode\src\collision_cylinder_trimesh.cpp" />
+    <ClCompile Include="..\..\ode\src\collision_kernel.cpp" />
+    <ClCompile Include="..\..\ode\src\collision_libccd.cpp" />
+    <ClCompile Include="..\..\ode\src\collision_quadtreespace.cpp" />
+    <ClCompile Include="..\..\ode\src\collision_sapspace.cpp" />
+    <ClCompile Include="..\..\ode\src\collision_space.cpp" />
+    <ClCompile Include="..\..\ode\src\collision_transform.cpp" />
+    <ClCompile Include="..\..\ode\src\collision_trimesh_box.cpp" />
+    <ClCompile Include="..\..\ode\src\collision_trimesh_ccylinder.cpp" />
+    <ClCompile Include="..\..\ode\src\collision_trimesh_disabled.cpp" />
+    <ClCompile Include="..\..\ode\src\collision_trimesh_distance.cpp" />
+    <ClCompile Include="..\..\ode\src\collision_trimesh_gimpact.cpp" />
+    <ClCompile Include="..\..\ode\src\collision_trimesh_opcode.cpp" />
+    <ClCompile Include="..\..\ode\src\collision_trimesh_plane.cpp" />
+    <ClCompile Include="..\..\ode\src\collision_trimesh_ray.cpp" />
+    <ClCompile Include="..\..\ode\src\collision_trimesh_sphere.cpp" />
+    <ClCompile Include="..\..\ode\src\collision_trimesh_trimesh.cpp" />
+    <ClCompile Include="..\..\ode\src\collision_trimesh_trimesh_new.cpp" />
+    <ClCompile Include="..\..\ode\src\collision_util.cpp" />
+    <ClCompile Include="..\..\ode\src\convex.cpp" />
+    <ClCompile Include="..\..\ode\src\cylinder.cpp" />
+    <ClCompile Include="..\..\ode\src\error.cpp" />
+    <ClCompile Include="..\..\ode\src\export-dif.cpp" />
+    <ClCompile Include="..\..\ode\src\heightfield.cpp" />
+    <ClCompile Include="..\..\ode\src\lcp.cpp" />
+    <ClCompile Include="..\..\ode\src\mass.cpp" />
+    <ClCompile Include="..\..\ode\src\mat.cpp" />
+    <ClCompile Include="..\..\ode\src\matrix.cpp" />
+    <ClCompile Include="..\..\ode\src\memory.cpp" />
+    <ClCompile Include="..\..\ode\src\misc.cpp" />
+    <ClCompile Include="..\..\ode\src\obstack.cpp" />
+    <ClCompile Include="..\..\ode\src\ode.cpp" />
+    <ClCompile Include="..\..\ode\src\odeinit.cpp" />
+    <ClCompile Include="..\..\ode\src\odemath.cpp" />
+    <ClCompile Include="..\..\ode\src\odeou.cpp" />
+    <ClCompile Include="..\..\ode\src\odetls.cpp" />
+    <ClCompile Include="..\..\ode\src\plane.cpp" />
+    <ClCompile Include="..\..\ode\src\quickstep.cpp" />
+    <ClCompile Include="..\..\ode\src\ray.cpp" />
+    <ClCompile Include="..\..\ode\src\rotation.cpp" />
+    <ClCompile Include="..\..\ode\src\sphere.cpp" />
+    <ClCompile Include="..\..\ode\src\step.cpp" />
+    <ClCompile Include="..\..\ode\src\timer.cpp" />
+    <ClCompile Include="..\..\ode\src\util.cpp" />
+    <ClCompile Include="..\..\GIMPACT\src\gimpact.cpp" />
+    <ClCompile Include="..\..\GIMPACT\src\gim_boxpruning.cpp" />
+    <ClCompile Include="..\..\GIMPACT\src\gim_contact.cpp" />
+    <ClCompile Include="..\..\GIMPACT\src\gim_math.cpp" />
+    <ClCompile Include="..\..\GIMPACT\src\gim_memory.cpp" />
+    <ClCompile Include="..\..\GIMPACT\src\gim_trimesh.cpp" />
+    <ClCompile Include="..\..\GIMPACT\src\gim_trimesh_capsule_collision.cpp" />
+    <ClCompile Include="..\..\GIMPACT\src\gim_trimesh_ray_collision.cpp" />
+    <ClCompile Include="..\..\GIMPACT\src\gim_trimesh_sphere_collision.cpp" />
+    <ClCompile Include="..\..\GIMPACT\src\gim_trimesh_trimesh_collision.cpp" />
+    <ClCompile Include="..\..\GIMPACT\src\gim_tri_tri_overlap.cpp" />
+    <ClCompile Include="..\..\ou\src\ou\atomic.cpp" />
+    <ClCompile Include="..\..\ou\src\ou\customization.cpp" />
+    <ClCompile Include="..\..\ou\src\ou\malloc.cpp" />
+    <ClCompile Include="..\..\ou\src\ou\threadlocalstorage.cpp" />
+    <ClCompile Include="..\..\ou\test\outest.cpp" />
+    <ClCompile Include="..\..\libccd\src\alloc.c" />
+    <ClCompile Include="..\..\libccd\src\ccd.c" />
+    <ClCompile Include="..\..\libccd\src\mpr.c" />
+    <ClCompile Include="..\..\libccd\src\polytope.c" />
+    <ClCompile Include="..\..\libccd\src\support.c" />
+    <ClCompile Include="..\..\libccd\src\vec3.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

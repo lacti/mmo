@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Demos">
+      <UniqueIdentifier>{BFBB4F2B-3B40-D84D-80F5-EA2604CA2FAC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demos\ConstraintDemo">
+      <UniqueIdentifier>{937236BF-409F-CE46-8E0E-6F4919688C1C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Demos\ConstraintDemo\ConstraintDemo.h">
+      <Filter>Demos\ConstraintDemo</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Demos\ConstraintDemo\ConstraintDemo.cpp">
+      <Filter>Demos\ConstraintDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Demos\ConstraintDemo\main.cpp">
+      <Filter>Demos\ConstraintDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Demos\ConstraintDemo\Win32ConstraintDemo.cpp">
+      <Filter>Demos\ConstraintDemo</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\bullet.rc" />
+  </ItemGroup>
+</Project>
